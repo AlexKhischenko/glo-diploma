@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexKhischenko/glo_academy.git"
+    "url": "git+https://git@github.com:AlexKhischenko/glo-diploma.git"
   },
   "browserslist": [
     "> 1%",
@@ -26,9 +26,9 @@
   "author": "AlexKhischenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexKhischenko/glo_academy/issues"
+    "url": "https://github.com/AlexKhischenko/glo-diplomay/issues"
   },
-  "homepage": "https://github.com/AlexKhischenko/glo_academy#readme",
+  "homepage": "https://github.com/AlexKhischenko/glo-diploma#readme",
   "devDependencies": {
     "clean-css": "^4.2.3",
     "gulp": "^4.0.2",
