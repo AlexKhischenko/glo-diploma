@@ -20,11 +20,9 @@ const tinypng = require('gulp-tinypng-compress');
 function bs() {
   serveSass();
   browserSync.init({
-      server: {
-          baseDir: "./src"
-      }
+    proxy: "http://diploma:81/"
   });
-  watch("./src/*.html").on('change', browserSync.reload);
+  watch("./src/**/*.php").on('change', browserSync.reload);
   watch("./src/sass/**/*.sass", serveSass);
   watch("./src/sass/**/*.scss", serveSass);
   watch("./src/js/*.js").on('change', browserSync.reload);
@@ -75,6 +73,8 @@ function php(done) {
     .pipe(dest("./dist/"));
   src("./src/phpmailer/**.php")
     .pipe(dest("./dist/phpmailer/"));
+  src("./src/php/**.php")
+    .pipe(dest("./dist/php/"));  
   done();
 };
 
@@ -94,4 +94,4 @@ function imagemin(done) {
 }
 
 exports.serve = bs;
-exports.build = series(buildCSS, buildJS, html, php, fonts);
+exports.build = series(buildCSS, buildJS, php, fonts);

@@ -12,8 +12,7 @@
   <body>
     
     <?php include('./php/test.php') ?>
-    
-    
+        
     <h1>DIPLOMA</h1>
     
     <script src="./js/jquery-3.4.1.min.js"></script>
