@@ -343,20 +343,6 @@ input.invalid {
 div.invalid {
   color: tomato; }
 
-body {
-  background-color: gray; }
-
-h2 {
-  color: green; }
-
-.test {
-  font-size: 3rem; }
-
-.container {
-  width: 50px;
-  height: 50px;
-  background-color: #fff; }
-
 .container {
   max-width: 1364px;
   width: 100%;
@@ -388,10 +374,17 @@ p, h1, h2, h3, h4, h5, h6, ul {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #202020; }
 
 ul, ol {
   list-style: none; }
+
+.orange {
+  color: #f47920; }
+
+.light {
+  color: #ffffff; }
 
 .header {
   position: relative;
@@ -413,8 +406,9 @@ ul, ol {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 0.5rem; }
-  .nav__logo {
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem; }
+  .nav__logo-small {
     margin-right: 2.142rem; }
   .nav__menu {
     margin-right: auto; }
@@ -453,12 +447,11 @@ ul, ol {
       .menu__item:last-child::after {
         display: none; }
   .menu__image {
+    position: relative;
     display: inline-block;
     height: 0.85rem;
     width: 0.85rem;
-    margin-left: 5px;
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px); }
+    margin-left: 5px; }
   .menu__android {
     display: inline-block;
     height: 1.5rem;
@@ -468,9 +461,13 @@ ul, ol {
     transform: translateY(2px); }
   .menu__text {
     display: inline-block;
-    color: #202020;
+    color: #d0d0d0;
     line-height: 2.142rem;
-    letter-spacing: 0.14px; }
+    letter-spacing: 0.14px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .menu__text:hover {
+      color: #202020; }
 
 .access {
   display: -webkit-box;
@@ -486,3 +483,119 @@ ul, ol {
   .access__image {
     width: 1rem;
     height: 1rem; }
+
+.subnav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .subnav__logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: auto; }
+
+.logo__image {
+  margin-right: 0.8rem; }
+
+.logo-text__name {
+  font-size: 1.714rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2.16px; }
+
+.logo-text__description {
+  font-size: 0.857rem;
+  font-weight: 400;
+  letter-spacing: 0.12px; }
+
+.submenu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px; }
+  .submenu__item {
+    position: relative;
+    margin-right: 2.5rem;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s; }
+    .submenu__item:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1rem;
+      width: 100%;
+      height: 1px;
+      background-color: #f47920; }
+    .submenu__item:last-child {
+      margin-right: 0; }
+  .submenu__text {
+    font-size: 1.142rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    letter-spacing: 0.16px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .submenu__text:hover {
+      color: #f47920; }
+  .submenu__icon {
+    font-size: 0.857rem; }
+  .submenu__image {
+    position: relative;
+    display: inline-block;
+    height: 0.85rem;
+    width: 0.85rem;
+    margin-left: 5px; }
+
+.counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .counter__container {
+    margin-top: 0.93rem; }
+  .counter__like, .counter__sale {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 4.357rem;
+    height: 6rem; }
+  .counter__like {
+    border: 1px solid #ebeaea;
+    margin-left: 3.6rem; }
+  .counter__sale {
+    border: 1px solid #f47920;
+    background-color: #f47920;
+    margin-left: 0.7rem; }
+  .counter__icon {
+    font-size: 1.428rem; }
+  .counter__number {
+    display: block;
+    font-size: 1.142rem;
+    line-height: 2.142rem; }

@@ -12,7 +12,8 @@
   display: flex
   align-items: center
   padding-top: 0.5rem
-  &__logo
+  padding-bottom: 0.4rem
+  &__logo-small
     margin-right: 2.142rem
   &__menu
     margin-right: auto
@@ -41,11 +42,11 @@
       &::after
         display: none
   &__image
+    position: relative
     display: inline-block
     height: 0.85rem
     width: 0.85rem
     margin-left: 5px
-    transform: translateY(2px)
   &__android
     display: inline-block
     height: 1.5rem
@@ -54,9 +55,12 @@
     transform: translateY(2px)
   &__text
     display: inline-block
-    color: $primary
+    color: $gray
     line-height: 2.142rem
     letter-spacing: 0.14px
+    transition: color 0.2s
+    &:hover
+      color: $primary
 .access
   display: flex
   &__text
@@ -68,3 +72,83 @@
   &__image
     width: 1rem
     height: 1rem
+.subnav
+  display: flex
+  align-items: center
+  &__logo
+    display: flex
+    align-items: center
+    margin-top: 15px
+    margin-right: auto
+.logo
+  &__image
+    margin-right: 0.8rem
+  &-text
+    &__name
+      font-size: 1.714rem
+      font-weight: 500
+      line-height: 1.8rem
+      text-transform: uppercase
+      letter-spacing: 2.16px
+    &__description
+      font-size: 0.857rem
+      font-weight: 400
+      letter-spacing: 0.12px
+.submenu
+  display: flex
+  margin-top: 5px
+  &__item
+    position: relative
+    margin-right: 2.5rem
+    transition: all 0.9s
+    &:hover
+      &::after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: -1rem
+        width: 100%
+        height: 1px
+        background-color: $orange
+    &:last-child
+      margin-right: 0
+  &__text
+    font-size: 1.142rem
+    font-weight: normal
+    line-height: 1.8rem
+    letter-spacing: 0.16px
+    transition: color 0.2s
+    &:hover
+      color: $orange
+  &__icon
+    font-size: 0.857rem
+  &__image
+    position: relative
+    display: inline-block
+    height: 0.85rem
+    width: 0.85rem
+    margin-left: 5px
+.counter
+  display: flex
+  &__container
+    margin-top: 0.93rem
+  &__like, &__sale
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: 4.357rem
+    height: 6rem
+  &__like
+    border: 1px solid #ebeaea
+    margin-left: 3.6rem
+  &__sale
+    border: 1px solid $orange
+    background-color: $orange
+    margin-left: 0.7rem
+  &__icon
+    font-size: 1.428rem
+  &__number
+    display: block
+    font-size: 1.142rem
+    line-height: 2.142rem
