@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Diploma</title>
+    <title>Catalog</title>
   </head>
   <body>
     
     <?php include('./php/header.php') ?>
     <?php include('./php/footer.php') ?>
-
-        
+    
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://kit.fontawesome.com/c523f624c7.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
