@@ -10,10 +10,53 @@
     <title>Diploma</title>
   </head>
   <body>
-    
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo nav__logo">
+            <img src="./img/logo-small.png" alt="Logo">
+          </div>
+          <ul class="menu nav__menu">
+            <li class="menu__item">
+              <a href="#" class="menu__text">Соц. сети
+                <img src="./img/svg/chat.svg" alt="Chat" class="menu__image">
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__text">Торгов. сети
+                <img src="./img/svg/basket.svg" alt="Basket" class="menu__image">
+              </a> 
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__text">Туристич. сети
+                <img src="./img/svg/globe.svg" alt="Globe" class="menu__image">
+              </a>              
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__text">Ассоциации
+                <img src="./img/svg/eye.svg" alt="Eye" class="menu__image">
+              </a>              
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__text">Сервисы
+                <img src="./img/svg/tool.svg" alt="Tool" class="menu__image">
+              </a>              
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__text">
+                <img src="./img/svg/android.svg" alt="Android" class="menu__android">
+              </a>              
+            </li>
+          </ul>
+          <div class="access nav__access">
+            <a href="#" class="menu__text">Вход на сайт
+              <img src="./img/svg/lock.svg" alt="Tool" class="menu__image">
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <?php include('./php/test.php') ?>
-        
-    <h1>DIPLOMA</h1>
     
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
