@@ -18,6 +18,7 @@
     <?php include('./php/categories.php') ?>
     <?php include('./php/popular.php') ?>
     <?php include('./php/timer.php') ?>
+    <?php include('./php/discount.php') ?>
     
     
     

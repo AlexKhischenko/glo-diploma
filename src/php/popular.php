@@ -19,7 +19,7 @@
                   <i class="far fa-star popular-card__rating-icon secondary"></i>
                 </div>
                 <div class="popular-card__price">
-                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word orange">3 000.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
+                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word">3 000.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
                   <i class="far fa-star popular-card__rating-icon secondary"></i>
                 </div>
                 <div class="popular-card__price">
-                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word orange">21 200.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
+                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word">21 200.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@
                   <i class="far fa-star popular-card__rating-icon secondary"></i>
                 </div>
                 <div class="popular-card__price">
-                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word orange">12 555.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
+                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word">12 555.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@
                   <i class="far fa-star popular-card__rating-icon secondary"></i>
                 </div>
                 <div class="popular-card__price">
-                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word orange">5 000.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
+                  <strong class="popular-card__pricetag"><span class="popular-card__pricetag-word">5 000.00</span> тг.<i class="fas fa-plus-circle popular-card__pricetag-icon"></i></strong>
                 </div>
               </div>
             </div>
