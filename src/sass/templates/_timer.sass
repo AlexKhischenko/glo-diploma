@@ -1,0 +1,76 @@
+.timer
+  margin-top: 6.6rem
+  &__wrapper
+    width: 100%
+  &__title
+    position: relative
+    max-width: 31rem    
+    margin: 0 auto
+    text-align: center
+    &::after
+      content: ''
+      position: absolute
+      right: -480px
+      bottom: 33%
+      width: 100%
+      height: 5px
+      background-image: url("../img/line-r.png")
+      background-size: 100%
+      background-position: center center
+      background-repeat: no-repeat
+      object-fit: cover
+    &::before
+      content: ''
+      position: absolute
+      left: -480px
+      bottom: 33%
+      width: 100%
+      height: 5px
+      background-image: url("../img/line-l.png")      
+      background-size: 100%
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+      object-fit: cover
+  &__container
+    width: 100%
+    margin-top: 3rem
+    display: flex
+    justify-content: center
+    align-items: center
+  &__first
+    &-wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 210px
+      height: 210px
+      border-radius: 50%
+      border: 2px dashed #d7d7d7;
+  &__second
+    &-wrap
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 198px
+      height: 198px      
+      border-radius: 50%
+      border: 5px solid $orange
+      background-color: #f6f6f6
+  &__space
+    &-title
+      display: block
+      font-family: 'DIN Pro Light', sans-serif
+      font-size: 2.142rem
+      font-weight: 300
+      text-align: center
+  &__number
+    display: block
+    font-family: 'DIN Pro Bold', sans-serif
+    font-size: 5.142rem
+    font-weight: 700
+    text-align: center
+  &__space
+    margin: 0 2.9rem
+  

@@ -17,7 +17,8 @@
     <?php include('./php/approved.php') ?>
     <?php include('./php/categories.php') ?>
     <?php include('./php/popular.php') ?>
-
+    <?php include('./php/timer.php') ?>
+    
     
     
     <?php include('./php/footer.php') ?>
