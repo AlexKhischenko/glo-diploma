@@ -18,7 +18,7 @@
               <a href="https://apps.apple.com/"><img src="./img/footer/apple-app.png" alt="Apple logo"></a>
               <a href="https://store.google.com/"><img src="./img/footer/google-app.png" alt="Google logo"> </a>                           
             </div>
-            <button class="btn">Ваш профиль<i class="fas fa-angle-right btn__icon"></i></button>
+            <a class="btn">Ваш профиль<i class="fas fa-angle-right btn__icon"></i></a>
           </div>
           <!-- /.footer__mobile -->
           <div class="col-25 about footer__about">
@@ -58,7 +58,7 @@
           <!-- /.footer__contacts -->
         </div>
         <!-- /.footer__wrapper -->
-        <div class="container copyright">
+        <div class="copyright">
           <p class="copyright__text">Copyright © BenchMark Consulting 2018-2019. Все права защищены</p>
           <a href="" class="copyright__error">Сообщить об ошибке</a>
         </div>

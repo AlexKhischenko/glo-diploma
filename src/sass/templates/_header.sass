@@ -112,6 +112,9 @@
         background-color: $orange
     &:last-child
       margin-right: 0
+      &:hover
+        &::after
+          display: none
   &__text
     font-size: 1.142rem
     font-weight: normal
@@ -139,13 +142,27 @@
     align-items: center
     width: 4.357rem
     height: 6rem
+    &::after
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      bottom: -1px
+      border-bottom: 12px solid #F6F6F6
+      border-left: 32px solid transparent
+      border-right: 32px solid transparent
+  &__content
+    text-align: center
+    left: 0
   &__like
     border: 1px solid #ebeaea
     margin-left: 3.6rem
   &__sale
+    position: relative
     border: 1px solid $orange
     background-color: $orange
     margin-left: 0.7rem
+
   &__icon
     font-size: 1.428rem
   &__number

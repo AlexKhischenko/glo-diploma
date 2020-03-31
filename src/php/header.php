@@ -66,6 +66,7 @@
           </ul>
           <!-- /.submenu subnav__submenu -->
           <div class="counter subnav__counter">
+            <!-- /.counter__like -->
             <div class="counter__like">
               <div class="counter__container">
                 <i class="far fa-heart counter__icon orange"></i>

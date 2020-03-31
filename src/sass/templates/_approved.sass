@@ -1,0 +1,82 @@
+.approved
+  padding: 29px 0
+  &__title
+    position: relative
+    max-width: 51.5rem
+    width: 100%
+    margin: 0 auto
+    padding: 2.4rem 0
+    font-family: 'DIN Pro Light', sans-serif
+    font-size: 1.714rem
+    font-weight: 300
+    text-align: center
+    border: 2px solid $primary
+    &::after
+      content: ''
+      position: absolute
+      right: -322px
+      bottom: 50%
+      max-width: 322px
+      width: 100%
+      height: 1px
+      background-image: url("../img/approved/line-r.png")
+      background-size: 100%
+      background-position: center center
+      background-repeat: no-repeat
+    &::before
+      content: ''
+      position: absolute
+      left: -322px
+      bottom: 50%
+      max-width: 322px
+      width: 100%
+      height: 1px
+      background-image: url("../img/approved/line-l.png")
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+    &-word
+      font-family: 'DIN Pro Bold', sans-serif
+      font-weight: 700
+      letter-spacing: 0.24px
+    &-icon
+      margin-left: 1.5rem
+      font-size: 1.285rem
+  &__container
+    margin-top: 2.1rem
+.product
+  &-section
+    display: flex
+    justify-content: space-between
+    &__card
+      display: flex
+      height: 250px
+      max-width: 31rem
+      width: 100%
+      background-color: #f6f6f6
+      text-align: right
+    &__image
+      display: table-cell
+      width: 45%
+      text-align: right
+      vertical-align: middle
+      margin-top: auto
+    &__img img
+      display: inline-block
+      vertical-align: bottom
+    &__data
+      width: 55%
+      padding-right: 48px
+    &__category
+      display: inline-block
+      margin-top: 3.4rem
+      font-family: 'DIN Pro Light', sans-serif
+      color: $secondary
+      font-weight: 300
+    &__title
+      margin-bottom: 1.9rem
+      font-family: 'DIN Pro Light', sans-serif
+      color: #000000
+      font-size: 1.714rem
+    &__btn
+      padding: 0.9rem 2rem

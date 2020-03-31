@@ -1,0 +1,126 @@
+.hero
+  padding-top: 2.1rem
+  background-color: #F6F6F6
+  &__swiper
+    &-container
+      position: relative
+  &-swiper
+    position: relative
+    &__slide      
+      display: flex !important
+    &__title
+      width: 29.8rem
+    &__heading
+      position: relative    
+      margin-top: 6rem  
+      margin-bottom: 2.357rem
+      font-family: 'DIN Pro Light', sans-serif
+      font-size: 2.571rem
+      font-weight: 300
+      line-height: 3.428rem
+      text-transform: uppercase
+      letter-spacing: 0.36px
+      &::after, &::before
+        content: ''
+        position: absolute
+        height: 1px
+        width: 50px
+        background-color: #cccccc
+      &::before
+        top: -29px
+        left: 2px
+      &::after
+        bottom: -124px
+        left: 2px
+    &__words
+      font-family: 'DIN Pro Bold', sans-serif
+    &__image
+      max-width: 662px
+      width: 100%
+      margin-left: -25px
+      &--center
+        margin-left: 0
+      &--right
+        margin-left: 0
+        margin-right: -50px
+    &__button
+      display: inline-block
+      padding: 1.05rem 2.05rem 1.25rem
+      font-family: 'DIN Pro Regular', sans-serif
+      font-size: 1.285rem
+      font-weight: normal
+      letter-spacing: 0.18px
+      color: $light
+      background-color: $primary
+      border: none
+      cursor: pointer
+    &__icon
+      display: inline-block
+      margin-left: 0.9rem
+      font-size: 1rem      
+    &__control
+      position: absolute
+      width: 8.5rem
+      bottom: 10.9rem
+      left: -0.6rem
+      &-next, &-prev
+        width: 45px
+        height: 45px
+        &::after
+          content: ''
+      &-left, &-right
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 45px
+        height: 45px
+        border: 1px solid $primary
+        background-color: $primary
+        color: $light
+        font-size: 2.571rem
+    &__active
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 45px
+      height: 45px
+      border: 1px solid $secondary
+      background-color: #F6F6F6
+      color: $secondary
+      font-size: 2.571rem
+    &__description
+      align-self: flex-end
+      transform: translate(-9rem, -3.5rem)
+      &-text
+        margin-bottom: 1.1rem
+        max-width: 13.5rem
+        font-weight: 400
+        color: $secondary
+        line-height: 1.285rem
+        letter-spacing: 0.1px
+      &-pricetag
+        font-weight: 400
+        color: $secondary
+        line-height: 1.285rem
+        letter-spacing: 0.14px
+      &-word
+        font-family: 'DIN Pro Regular', sans-serif
+        font-size: 1.714rem
+        color: $orange
+        letter-spacing: 0.24px
+    &__social
+      position: absolute
+      z-index: 15
+      display: flex
+      flex-direction: column
+      bottom: 1.9rem
+      right: 0
+      &-icon
+        display: inline-block
+        margin-bottom: 1.55rem
+        font-size: 0.95rem
+        color: $secondary
+        transition: color 0.2s
+        text-align: center
+        &:hover
+          color: $primary
