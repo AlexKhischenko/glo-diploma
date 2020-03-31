@@ -16,6 +16,7 @@
     <?php include('./php/hero-slider.php') ?>
     <?php include('./php/approved.php') ?>
     <?php include('./php/categories.php') ?>
+    <?php include('./php/popular.php') ?>
 
     
     

@@ -399,6 +399,9 @@ button {
 .orange {
   color: #f47920; }
 
+.secondary {
+  color: #919191; }
+
 .light {
   color: #ffffff; }
 
@@ -944,10 +947,9 @@ button {
       position: absolute;
       right: -350px;
       bottom: 33%;
-      max-width: 468px;
       width: 100%;
-      height: 8px;
-      background-image: url("../img/categories/line-r.png");
+      height: 9px;
+      background-image: url("../img/line-r.png");
       background-size: 100%;
       background-position: center center;
       background-repeat: no-repeat; }
@@ -956,10 +958,10 @@ button {
       position: absolute;
       left: -350px;
       bottom: 33%;
-      max-width: 468px;
       width: 100%;
-      height: 8px;
-      background-image: url("../img/categories/line-l.png");
+      height: 20%;
+      background-image: url("../img/line-l.png");
+      background-size: 100%;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat; }
@@ -1010,6 +1012,119 @@ button {
   .btn-more__icon {
     margin-left: 1rem;
     font-size: 0.785rem; }
+
+.popular {
+  margin-top: 6.6rem; }
+  .popular__title {
+    position: relative;
+    max-width: 24rem;
+    margin: 0 auto;
+    text-align: center; }
+    .popular__title::after {
+      content: '';
+      position: absolute;
+      right: -360px;
+      bottom: 33%;
+      width: 100%;
+      height: 9px;
+      background-image: url("../img/line-r.png");
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+    .popular__title::before {
+      content: '';
+      position: absolute;
+      left: -360px;
+      bottom: 33%;
+      width: 100%;
+      height: 20%;
+      background-image: url("../img/line-l.png");
+      background-size: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+  .popular__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 2.85rem; }
+
+.popular-card {
+  max-width: 22.857rem;
+  width: 100%; }
+  .popular-card__container {
+    position: relative;
+    width: 100%;
+    padding-left: 1.5rem; }
+    .popular-card__container::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 4rem;
+      height: 1px;
+      background-color: #d7d7d7; }
+  .popular-card__title {
+    margin-top: 1.6rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.285rem;
+    font-weight: 400;
+    color: #202020; }
+  .popular-card__category {
+    display: block;
+    margin-bottom: 1.1rem;
+    font-family: 'DIN Pro Light', sans-serif;
+    font-weight: 300;
+    color: #919191; }
+  .popular-card__rating {
+    display: inline-block;
+    margin-bottom: 3.95rem;
+    letter-spacing: 2px;
+    color: #202020; }
+  .popular-card__price {
+    position: relative;
+    width: 100%; }
+  .popular-card__pricetag {
+    display: inline-block;
+    margin: 0 auto;
+    font-family: 'DIN Pro Light', sans-serif;
+    font-size: 1.142rem; }
+    .popular-card__pricetag-word {
+      font-size: 2.142rem; }
+    .popular-card__pricetag-icon {
+      position: absolute;
+      right: 20px;
+      bottom: 5px;
+      color: #919191;
+      font-size: 1.714rem;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+      .popular-card__pricetag-icon:hover {
+        color: #202020; }
+
+.popular__btn {
+  width: 100%;
+  margin-top: 3.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .footer {
   position: relative;
