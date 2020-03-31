@@ -57,13 +57,18 @@
           </div>
           <!-- /.footer__contacts -->
         </div>
-        <!-- /.footer__wrapper -->
-        <div class="copyright">
-          <p class="copyright__text">Copyright © BenchMark Consulting 2018-2019. Все права защищены</p>
-          <a href="" class="copyright__error">Сообщить об ошибке</a>
-        </div>
-        <!-- /.copyright -->
+        <!-- /.footer__wrapper -->        
       </div>
       <!-- /.container -->
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__content">
+            <p class="copyright__text">Copyright © BenchMark Consulting 2018-2019. Все права защищены</p>
+            <a href="" class="copyright__error">Сообщить об ошибке</a>
+          </div>
+          <!-- /.copyright__content -->
+        </div>          
+      </div>
+      <!-- /.copyright -->
     </footer>
     <!-- /.footer -->
