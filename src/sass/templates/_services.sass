@@ -1,0 +1,90 @@
+.services
+  margin-top: 6.6rem
+  &__title
+    position: relative
+    max-width: 24rem    
+    margin: 0 auto
+    margin-bottom: 3rem
+    text-align: center
+    &::after
+      content: ''
+      position: absolute
+      right: -380px
+      bottom: 32%
+      width: 100%
+      height: 9px
+      background-image: url("../img/line-r.png")
+      background-size: 100%
+      background-position: center center
+      background-repeat: no-repeat
+      object-fit: cover
+    &::before
+      content: ''
+      position: absolute
+      left: -380px
+      bottom: 32%
+      width: 100%
+      height: 20%
+      background-image: url("../img/line-l.png")      
+      background-size: 100%
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+      object-fit: cover
+.wide
+  &-swiper
+    margin-top: 1rem
+    padding-bottom: 8rem
+    &__image
+      &-container
+        width: 319px
+        width: 100%
+        text-align: center
+    &__title
+      margin-top: 1rem
+      margin-bottom: 0.5rem
+      font-size: 1.285rem
+      font-weight: 400
+      cursor: pointer
+      transition: color 0.2s
+      &:hover
+        color: $orange
+    &__link
+      font-family: 'DIN Pro Light', sans-serif
+      font-weight: 300
+      color: $secondary
+      transition: color 0.2s
+      &:hover
+        color: $primary
+    &__control
+      position: absolute
+      z-index: 25
+      width: 8.5rem
+      bottom: 2.1rem
+      left: 50%
+      transform: translateX(-50%)
+      &-next, &-prev
+        width: 45px
+        height: 45px
+        &::after
+          content: ''
+      &-left, &-right
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 45px
+        height: 45px
+        border: 1px solid $primary
+        background-color: $primary
+        color: $light
+        font-size: 2.571rem
+    &__active
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 45px
+      height: 45px
+      border: 1px solid $secondary
+      background-color: #F6F6F6
+      color: $secondary
+      font-size: 2.571rem

@@ -20,7 +20,7 @@
     <?php include('./php/timer.php') ?>
     <?php include('./php/discount.php') ?>
     <?php include('./php/adv.php') ?>
-    
+    <?php include('./php/services.php') ?>    
     
     
     <?php include('./php/footer.php') ?>

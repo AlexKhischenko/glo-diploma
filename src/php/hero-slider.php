@@ -57,10 +57,14 @@
           <!-- Add Arrows -->
           <div class="hero-swiper__control">
             <div class="swiper-button-next hero-swiper__control-next">
-              <div class="hero-swiper__control-right"><i class="fas fa-angle-right"></i></div>
+              <div class="hero-swiper__control-right">
+                <i class="fas fa-angle-right"></i>
+              </div>
             </div>
             <div class="swiper-button-prev hero-swiper__control-prev">
-              <div class="hero-swiper__control-left hero-swiper__active"><i class="fas fa-angle-left"></i></div>
+              <div class="hero-swiper__control-left hero-swiper__active">
+                <i class="fas fa-angle-left"></i>
+              </div>
             </div>
           </div>
           <div class="hero-swiper__social">
