@@ -37,25 +37,23 @@
   .wide
     &-swiper
       text-align: center
-
+  //APPROVED
   .product
     &-section
       &__data
         padding-right: 1rem
       &__title
         letter-spacing: -1px
+  //CATEGORIES
   .categories
     &__icon
-      left: 0.5rem
+      left: 1rem
   .adv
     &__title
       font-size: 3.3rem
       max-width: 45rem
     &__image
       right: 0
-@media screen and ( max-width: 759px )
-  //HEADER
-  .couner
 @media screen and ( max-width: 991px )
   //SETTINGS
   .col-25
@@ -170,6 +168,29 @@
           font-size: 1.8rem
     &__btn
       margin-top: 0
+@media screen and ( max-width: 759px )
+  //HEADER
+  .header
+    &::before
+      top: 75px
+  .nav
+    display: none
+  .subnav
+    &__logo
+      margin-top: 8px
+  .submenu
+    display: none
+  .logo
+    &-text
+      display: none
+  .mobile
+    &-menu
+      &__btn
+        display: block
+  .mobile
+    &-submenu
+      &__btn
+        display: block
 @media screen and ( max-width: 570px )
   //SETTINGS
   .col-25

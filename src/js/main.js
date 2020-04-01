@@ -166,7 +166,29 @@ $(document).ready(function(){
     } 
   });
   
-
+  // Mobile menu
+  let mobileMenuBtn = $('.mobile-menu__btn');
+  let menu = $('menu');
+  let closeMobileMenu = $('.mobile-menu__close-btn');
+  mobileMenuBtn.click( function() {
+    console.log('click');
+		menu.toggleClass('mobile-menu__active');
+  });
+  closeMobileMenu.click(function() {
+		menu.toggleClass('mobile-menu__active');
+  });
+  
+  // Mobile submenu
+  let mobileSubMenuBtn = $('.mobile-submenu__btn');
+  let submobile = $('.submobile');
+  let closeSubMobileMenu = $('.mobile-submenu__close-btn');
+  mobileSubMenuBtn.click( function() {
+    console.log('click');
+		submobile.toggleClass('mobile-submenu__active');
+  });
+  closeSubMobileMenu.click(function() {
+		submobile.toggleClass('mobile-submenu__active');
+	});
   
 
 });
