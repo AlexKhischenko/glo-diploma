@@ -1,6 +1,6 @@
 <section class="section approved">
       <div class="container">
-        <h2 class="approved__title"><span class="approved__title-word">УТВЕРЖДЕННАЯ ФОРМА</span> ДЛЯ ШКОЛ Г.НУРСУЛТАН<i class="fas fa-angle-right approved__title-icon"></i></h2>
+        <h2 class="approved__title"><a href="./goodscard.php"><span class="approved__title-word">УТВЕРЖДЕННАЯ ФОРМА</span> ДЛЯ ШКОЛ Г.НУРСУЛТАН<i class="fas fa-angle-right approved__title-icon"></i></a></h2>
         <div class="approved__container product-section">
           <div class="col-30 product-section__card">
             <div class="product-section__image">

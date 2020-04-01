@@ -9,7 +9,7 @@
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image">
-                <img src="./img/hero/hero-slide-1.png" alt="Uniform">
+                <img src="./img/hero/hero-slide-1.png" alt="Uniform" class="hero-swiper__pic">
               </div>
               <!-- /.her-slide__image -->
               <div class="hero-swiper__description">
@@ -26,7 +26,7 @@
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--right">
-                <img src="./img/hero/hero-slide-2.png" alt="Uniform">
+                <img src="./img/hero/hero-slide-2.png" alt="Backpack" class="hero-swiper__pic">
               </div>
               <!-- /.her-slide__image -->
               <div class="hero-swiper__description">
@@ -43,7 +43,7 @@
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--center">
-                <img src="./img/hero/hero-slide-3.png" alt="Uniform">
+                <img src="./img/hero/hero-slide-3.png" alt="PC" class="hero-swiper__pic">
               </div>
               <!-- /.her-slide__image -->
               <div class="hero-swiper__description">

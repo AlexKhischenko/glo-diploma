@@ -66,21 +66,22 @@
           </ul>
           <!-- /.submenu subnav__submenu -->
           <div class="counter subnav__counter">
-            <!-- /.counter__like -->
             <div class="counter__like">
+              <img src="./img/header/flag-t.png" alt="Flag">
               <div class="counter__container">
                 <i class="far fa-heart counter__icon orange"></i>
-              </div>
-              <span class="counter__number orange">2</span>
+                <span class="counter__number orange">2</span>
+              </div>              
             </div>
             <!-- /.counter__like -->
             <div class="counter__sale">
+              <img src="./img/header/flag-o.png" alt="Flag">
               <div class="counter__container">
                 <i class="fas fa-shopping-bag counter__icon light"></i>
-              </div>
-              <span class="counter__number light">0</span>
+                <span class="counter__number light">0</span>
+              </div> 
             </div>
-            <!-- /.counter__sale -->
+            <!-- /.counter__sale -->          
           </div>
           <!-- /.counter subnav__counter -->
         </nav>
