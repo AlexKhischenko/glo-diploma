@@ -966,7 +966,7 @@ button {
       left: -350px;
       bottom: 33%;
       width: 100%;
-      height: 20%;
+      height: 9px;
       background-image: url("../img/line-l.png");
       background-size: 100%;
       background-size: cover;
@@ -1045,7 +1045,7 @@ button {
       left: -360px;
       bottom: 33%;
       width: 100%;
-      height: 20%;
+      height: 9px;
       background-image: url("../img/line-l.png");
       background-size: 100%;
       background-size: cover;
@@ -1148,7 +1148,7 @@ button {
       right: -480px;
       bottom: 33%;
       width: 100%;
-      height: 5px;
+      height: 9px;
       background-image: url("../img/line-r.png");
       background-size: 100%;
       background-position: center center;
@@ -1160,7 +1160,7 @@ button {
       left: -480px;
       bottom: 33%;
       width: 100%;
-      height: 5px;
+      height: 9px;
       background-image: url("../img/line-l.png");
       background-size: 100%;
       background-size: cover;
@@ -1262,7 +1262,7 @@ button {
       left: -360px;
       bottom: 33%;
       width: 100%;
-      height: 20%;
+      height: 9px;
       background-image: url("../img/line-l.png");
       background-size: 100%;
       background-size: cover;
