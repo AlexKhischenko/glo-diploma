@@ -219,4 +219,11 @@ $(document).ready(function(){
     };
   });
 
+  let categoriesBtn = $('.categories__btn');
+  let categoriesItem = $('.test');  
+  categoriesBtn.click( function (event) {
+    event.preventDefault();
+    $('.test').toggleClass('categories__item-hidden');   
+  });
+
 });
