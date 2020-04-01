@@ -459,6 +459,7 @@ button {
     text-align: center; }
 
 menu {
+  padding: 1rem;
   position: fixed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -519,18 +520,12 @@ menu {
   .mobile-menu__item {
     position: relative;
     display: inline-block;
+    width: 150px;
     font-family: 'DIN Pro Light', sans-serif;
     font-weight: normal;
     font-size: 1.3rem;
-    padding: 1.8rem 0 0 1rem; }
-    .mobile-menu__item::after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 150px;
-      bottom: -0.5rem;
-      left: 1rem;
-      background-color: #525252; }
+    padding: 1.5rem 0 0.5rem 0;
+    border-bottom: 1px solid #525252; }
   .mobile-menu__text {
     color: #ffffff; }
   .mobile-menu__image {
@@ -539,8 +534,8 @@ menu {
   .mobile-menu__btn {
     display: none;
     position: fixed;
-    left: 90px;
-    top: 18px;
+    left: 1.5rem;
+    top: 4.5rem;
     background-color: transparent;
     width: 38px;
     height: 38px;
@@ -578,6 +573,7 @@ menu {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  padding: 1rem;
   width: 100%;
   height: 100vh;
   background-color: rgba(3, 3, 3, 0.95);
@@ -625,18 +621,13 @@ menu {
   .mobile-submenu__item {
     position: relative;
     display: inline-block;
+    width: 150px;
+    text-align: right;
     font-family: 'DIN Pro Light', sans-serif;
     font-weight: normal;
     font-size: 1.3rem;
-    padding: 1.8rem 1rem 0 0; }
-    .mobile-submenu__item::after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 150px;
-      bottom: -0.5rem;
-      right: 1rem;
-      background-color: #525252; }
+    padding: 1.5rem 0 0.5rem 0;
+    border-bottom: 1px solid #525252; }
   .mobile-submenu__text {
     color: #ffffff;
     text-align: right; }
@@ -647,7 +638,7 @@ menu {
     display: none;
     position: fixed;
     right: 1.5rem;
-    top: 18px;
+    top: 4.5rem;
     background-color: transparent;
     width: 38px;
     height: 38px;
@@ -2131,7 +2122,7 @@ menu {
       height: 25px;
       font-size: 1.2rem; }
   .hero-swiper__social {
-    top: 0; }
+    top: 2rem; }
   .approved__title {
     border: none;
     padding: 2.4rem 0 1rem; }
@@ -2187,14 +2178,21 @@ menu {
 
 @media screen and (max-width: 759px) {
   .header::before {
-    top: 75px; }
+    top: 45px; }
   .nav {
+    padding-top: 0.7rem;
+    padding-bottom: 1.5rem;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .nav__menu {
+      display: none; }
+  .logo-text {
     display: none; }
   .subnav__logo {
-    margin-top: 8px; }
-  .submenu {
     display: none; }
-  .logo-text {
+  .submenu {
     display: none; }
   .mobile-menu__btn {
     display: block; }

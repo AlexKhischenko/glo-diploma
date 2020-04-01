@@ -188,7 +188,35 @@ $(document).ready(function(){
   });
   closeSubMobileMenu.click(function() {
 		submobile.toggleClass('mobile-submenu__active');
-	});
+  });
   
+  // Закрытие мобильного меню кликом на пустой области
+  menu.click( function(e) {
+    if (menu.is(e.target) && menu.has(e.target).length === 0) {
+      menu.removeClass('mobile-menu__active');
+    };
+  });
+  // Закрытие мобильного меню клавишей Esc
+  $(document).keydown( function(event) {
+    if (menu.hasClass('mobile-menu__active')) {
+      if (event.which == 27) {
+        menu.removeClass('mobile-menu__active');
+      };
+    };
+  });
+  // Закрытие мобильного меню кликом на пустой области
+  submobile.click( function(e) {
+    if (submobile.is(e.target) && submobile.has(e.target).length === 0) {
+      submobile.removeClass('mobile-submenu__active');
+    };
+  });
+  // Закрытие мобильного меню клавишей Esc
+  $(document).keydown( function(event) {
+    if (submobile.hasClass('mobile-submenu__active')) {
+      if (event.which == 27) {
+        submobile.removeClass('mobile-submenu__active');
+      };
+    };
+  });
 
 });
