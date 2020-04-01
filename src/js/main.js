@@ -102,6 +102,69 @@ $(document).ready(function(){
       $('.wide-swiper__control-right').removeClass('wide-swiper__active');
     } 
   });
+
+  // Инициализация слайдера многостраничного секции LikeMore
+  var likeMoreSwiper = new Swiper('.likemore__swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    freeMode: true,
+    // loop: false,
+    // loopFillGroupWithBlank: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 570px
+      570: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 760px
+      759: {
+        slidesPerView: 2,
+        spaceBetween: 60
+      },
+      // when window width is >= 992px
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      // when window width is >= 1200px
+      1199: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    },
+    navigation: {
+      nextEl: '.likemore-swiper__control-next',
+      prevEl: '.likemore-swiper__control-prev',
+    },
+  });
+  $('.likemore-swiper__control-next').click( function () {
+    if ($('.likemore-swiper__control-next').is('[aria-disabled="true"]') && 
+    $('.likemore-swiper__control-prev').is('[aria-disabled="false"]')) {
+      $('.likemore-swiper__control-right').addClass('likemore-swiper__active');
+      $('.likemore-swiper__control-left').removeClass('likemore-swiper__active');
+    } else if ($('.likemore-swiper__control-next').is('[aria-disabled="false"]') && 
+    $('.likemore-swiper__control-prev').is('[aria-disabled="false"]')) {
+      $('.likemore-swiper__control-right').removeClass('likemore-swiper__active');
+      $('.likemore-swiper__control-left').removeClass('likemore-swiper__active');
+    } 
+  });
+  $('.likemore-swiper__control-prev').click( function () {
+    if ($('.likemore-swiper__control-prev').is('[aria-disabled="true"]') && 
+    $('.likemore-swiper__control-next').is('[aria-disabled="false"]')) {
+      $('.likemore-swiper__control-left').addClass('likemore-swiper__active');
+      $('.likemore-swiper__control-right').removeClass('likemore-swiper__active');
+    } else if ($('.likemore-swiper__control-prev').is('[aria-disabled="false"]') && 
+    $('.likemore-swiper__control-next').is('[aria-disabled="false"]')) {
+      $('.likemore-swiper__control-left').removeClass('likemore-swiper__active');
+      $('.likemore-swiper__control-right').removeClass('likemore-swiper__active');
+    } 
+  });
   
 
   

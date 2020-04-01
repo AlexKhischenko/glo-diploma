@@ -13,7 +13,7 @@
   <body>
     
     <?php include('./php/header.php') ?>
-    <?php include('./php/hero-slider.php') ?>
+    <?php include('./php/hero.php') ?>
     <?php include('./php/approved.php') ?>
     <?php include('./php/categories.php') ?>
     <?php include('./php/popular.php') ?>

@@ -405,6 +405,9 @@ button {
 .light {
   color: #ffffff; }
 
+.center {
+  margin: 0 auto; }
+
 .col-25 {
   width: 23%; }
 
@@ -732,7 +735,11 @@ button {
       color: #ffffff;
       background-color: #202020;
       border: none;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s; }
+      .hero-swiper__button:hover {
+        color: #f47920; }
     .hero-swiper__icon {
       display: inline-block;
       margin-left: 0.9rem;
@@ -1426,7 +1433,7 @@ button {
       bottom: 32%;
       width: 100%;
       height: 9px;
-      background-image: url("../img/line-r.png");
+      background-image: url("../img/likemore/line-r.png");
       background-size: 100%;
       background-position: center center;
       background-repeat: no-repeat;
@@ -1437,8 +1444,8 @@ button {
       left: -380px;
       bottom: 32%;
       width: 100%;
-      height: 20%;
-      background-image: url("../img/line-l.png");
+      height: 9px;
+      background-image: url("../img/likemore/line-l.png");
       background-size: 100%;
       background-size: cover;
       background-position: center center;
@@ -1521,6 +1528,96 @@ button {
     background-color: #F6F6F6;
     color: #919191;
     font-size: 2.571rem; }
+
+.likemore {
+  margin-top: 6.6rem; }
+  .likemore__title {
+    position: relative;
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    text-align: center; }
+    .likemore__title::after {
+      content: '';
+      position: absolute;
+      right: -330px;
+      bottom: 32%;
+      width: 60%;
+      height: 9px;
+      background-image: url("../img/likemore/line-r.png");
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+    .likemore__title::before {
+      content: '';
+      position: absolute;
+      left: -330px;
+      bottom: 32%;
+      width: 60%;
+      height: 20%;
+      background-image: url("../img/likemore/line-l.png");
+      background-size: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+  .likemore-swiper {
+    margin-top: 1rem;
+    padding-bottom: 8rem; }
+    .likemore-swiper__slide {
+      padding-left: 0.6rem; }
+    .likemore-swiper__control {
+      position: absolute;
+      z-index: 25;
+      width: 8.5rem;
+      bottom: 2.1rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .likemore-swiper__control-next, .likemore-swiper__control-prev {
+        width: 45px;
+        height: 45px; }
+        .likemore-swiper__control-next::after, .likemore-swiper__control-prev::after {
+          content: ''; }
+      .likemore-swiper__control-left, .likemore-swiper__control-right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #202020;
+        background-color: #202020;
+        color: #ffffff;
+        font-size: 2.571rem; }
+    .likemore-swiper__active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #919191;
+      background-color: #F6F6F6;
+      color: #919191;
+      font-size: 2.571rem; }
 
 .footer {
   position: relative;

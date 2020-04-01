@@ -5,7 +5,7 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">Школьная форма по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./catalog.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./goodscard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image">
@@ -22,7 +22,7 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">Школьные рюкзаки по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./catalog.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./goodscard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--right">
@@ -39,7 +39,7 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">ПК для учебы по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./catalog.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./goodscard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--center">

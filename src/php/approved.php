@@ -10,7 +10,7 @@
             <div class="product-section__data">
               <span class="product-section__category">Популярные товары</span>
               <p class="product-section__title">для мальчиков</p>
-              <a href="./catalog.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
+              <a href="./goodscard.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
             </div>
             <!-- /.product-section__data -->
           </div>
@@ -22,7 +22,7 @@
             <div class="product-section__data">
               <span class="product-section__category">Популярные товары</span>
               <p class="product-section__title">для девочек</p>
-              <a href="./catalog.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
+              <a href="./goodscard.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
             </div>
             <!-- /.product-section__data -->
           </div>
@@ -34,7 +34,7 @@
             <div class="product-section__data">
               <span class="product-section__category">Самые популярные</span>
               <p class="product-section__title">аксессуары</p>
-              <a href="./catalog.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
+              <a href="./goodscard.php" class="btn product-section__btn">Подробнее<i class="fas fa-angle-right btn__icon"></i></a>
             </div>
             <!-- /.product-section__data -->
           </div>

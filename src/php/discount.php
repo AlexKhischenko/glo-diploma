@@ -5,7 +5,7 @@
           <div class="discount__container">
             <div class="col-25 discount-card ">
               <div class="discount-card__image-container">
-                <a href="./catalog.php"><img src="./img/discount/jacket.png" alt="Блузка"></a>
+                <a href="./goodscard.php"><img src="./img/discount/jacket.png" alt="Блузка"></a>
                 <div class="label label__container">
                   <div class="label__image-container">
                     <img src="./img/discount/label.png" alt="Label">
@@ -35,7 +35,7 @@
             <!-- /.col-25 discount__card -->
             <div class="col-25 discount-card ">
               <div class="discount-card__image-container">
-                <a href="./catalog.php"><img src="./img/discount/shoes.png" alt="Куртка"></a>
+                <a href="./goodscard.php"><img src="./img/discount/shoes.png" alt="Куртка"></a>
                 <div class="label label__container">
                   <div class="label__image-container">
                     <img src="./img/discount/label.png" alt="Label">
@@ -65,7 +65,7 @@
             <!-- /.col-25 discount__card -->
             <div class="col-25 discount-card ">
               <div class="discount-card__image-container">
-                <a href="./catalog.php"><img src="./img/discount/dresses.png" alt="Кросовки"></a>
+                <a href="./goodscard.php"><img src="./img/discount/dresses.png" alt="Кросовки"></a>
                 <div class="label label__container">
                   <div class="label__image-container">
                     <img src="./img/discount/label.png" alt="Label">
@@ -95,7 +95,7 @@
             <!-- /.col-25 discount__card -->
             <div class="col-25 discount-card ">
               <div class="discount-card__image-container">
-                <a href="./catalog.php"><img src="./img/discount/tie.png" alt="Рюкзак"></a>
+                <a href="./goodscard.php"><img src="./img/discount/tie.png" alt="Рюкзак"></a>
                 <div class="label label__container">
                   <div class="label__image-container">
                     <img src="./img/discount/label.png" alt="Label">

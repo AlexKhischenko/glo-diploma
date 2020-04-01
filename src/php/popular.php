@@ -5,7 +5,7 @@
           <div class="popular__container">
             <div class="col-25 popular-card ">
               <div class="popular-card__image-container">
-                <a href="./catalog.php"><img src="./img/popular/blouse.png" alt="Блузка"></a>
+                <a href="./goodscard.php"><img src="./img/popular/blouse.png" alt="Блузка"></a>
               </div>
               <!-- /.populal-card__image-container -->
               <div class="popular-card__container">
@@ -26,7 +26,7 @@
             <!-- /.col-25 popular__card -->
             <div class="col-25 popular-card ">
               <div class="popular-card__image-container">
-                <a href="./catalog.php"><img src="./img/popular/jacket.png" alt="Куртка"></a>
+                <a href="./goodscard.php"><img src="./img/popular/jacket.png" alt="Куртка"></a>
               </div>
               <!-- /.populal-card__image-container -->
               <div class="popular-card__container">
@@ -47,7 +47,7 @@
             <!-- /.col-25 popular__card -->
             <div class="col-25 popular-card ">
               <div class="popular-card__image-container">
-                <a href="./catalog.php"><img src="./img/popular/snickers.png" alt="Кросовки"></a>
+                <a href="./goodscard.php"><img src="./img/popular/snickers.png" alt="Кросовки"></a>
               </div>
               <!-- /.populal-card__image-container -->
               <div class="popular-card__container">
@@ -68,7 +68,7 @@
             <!-- /.col-25 popular__card -->
             <div class="col-25 popular-card ">
               <div class="popular-card__image-container">
-                <a href="./catalog.php"><img src="./img/popular/backpack.png" alt="Рюкзак"></a>
+                <a href="./goodscard.php"><img src="./img/popular/backpack.png" alt="Рюкзак"></a>
               </div>
               <!-- /.populal-card__image-container -->
               <div class="popular-card__container">
