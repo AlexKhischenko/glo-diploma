@@ -11,13 +11,13 @@
     &__variety
       justify-content: center
 @media screen and ( max-width: 1300px )
+  //ADV
   .adv
     &__title
       font-size: 4rem
       max-width: 50rem
     &__image
       right: 0
-
 @media screen and ( max-width: 1200px )
   //SETTINGS
   html
@@ -52,6 +52,7 @@
   .categories
     &__icon
       left: 1rem
+  //ADV
   .adv
     &__title
       font-size: 3.3rem
@@ -62,6 +63,11 @@
   .timer
     &__space
       margin: 0 1.5rem
+  //SERVICES
+  .wide
+    &-swiper
+      &__control
+        width: 10rem
 @media screen and ( max-width: 991px )
   //SETTINGS
   .col-25
@@ -210,6 +216,50 @@
         font-size: 1.8rem
     &__number
       font-size: 4rem
+  //DISCOUNT
+  .discount
+    &__title
+      &::after, &::before        
+        display: none
+    &__container
+      flex-wrap: wrap
+      justify-content: space-around
+    &-card
+      max-width: 27rem
+      margin-right: 0.5rem
+      margin-right: 0.5rem
+      margin-bottom: 4em
+      &__pricetag
+        &-word
+          font-size: 1.8rem
+    &__btn
+      margin-top: 0
+  //SERVICES
+  .services
+    margin-top: 4rem
+  //FOOTER
+  .footer
+    margin-top: 4rem
+    &__wrapper
+      flex-wrap: wrap
+  .info
+    margin-bottom: 2rem
+  .mobile
+    margin-bottom: 2rem
+    &__apps
+      margin-bottom: 2rem
+  .about
+    &__list
+      &-item
+        line-height: 1.5rem
+  .contacts
+    align-items: flex-start
+    text-align: left
+    margin-bottom: 2rem
+    &__banks
+      margin-top: 2rem
+  .logo-black
+    margin-bottom: 1rem
 @media screen and ( max-width: 759px )
   //HEADER
   .header
@@ -252,7 +302,27 @@
       &-title
         font-size: 1.5rem
     &__number
-      font-size: 3rem  
+      font-size: 3rem
+  //ADV
+  .adv
+    &__wrapper
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      text-align: center
+    &__title
+      margin-top: 3rem
+      font-size: 2.5rem
+    &__subtitle
+      font-size: 2rem
+    &__image
+      position: relative
+      margin-top: 3rem
+      min-height: 0
+      width: 55%
+    &__btn
+      font-size: 1rem
 @media screen and ( max-width: 570px )
   //SETTINGS
   .col-25
@@ -317,5 +387,74 @@
         font-family: 'DIN Pro Regular', sans-serif
         font-size: 1rem
     &__number
-      font-size: 1.8rem 
-          
+      font-size: 1.8rem
+  //DISCOUNT
+  .discount
+    &-card
+      margin-right: 0
+  //ADV
+  .adv
+    &__title
+      max-width: 25rem
+      font-size: 2rem
+    &__subtitle
+      font-size: 1.5rem
+  //SERVICES  
+  .wide
+    &-swiper
+      padding-bottom: 6rem
+      &__control
+        width: 9.5rem
+        &-left, &-right
+          width: 35px
+          height: 35px
+          font-size: 1.5rem
+  //FOOTER
+  .footer
+    &__wrapper
+      margin-bottom: 0
+  .info
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+  .mobile
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__heading
+      margin-bottom: 1rem
+    &__apps
+      margin-bottom: 2rem
+  .about
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin-bottom: 2rem
+    &__heading
+      font-size: 1rem
+    &__list
+      max-width: 20rem
+      width: 100%
+      &-item
+        padding: 0.5rem        
+        width: 100%
+        border-bottom: 1px solid $primary
+        line-height: 1.5rem
+        margin-bottom: 0.1rem
+  .contacts
+    align-items: center
+    text-align: center
+    &__banks
+      margin-top: 2rem
+  .logo-black
+    margin-bottom: 1rem
+    text-align: left
+  .copyright
+    &__content
+      flex-direction: column
+      text-align: center
+    &__text
+      line-height: 1.5rem
