@@ -1,4 +1,4 @@
-<header class="header header-bg">
+<header class="header header-bgm">
       <div class="container">
         <div class="mobile-menu__btn">
           <span class="mobile-menu__btn-line"></span>

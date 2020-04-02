@@ -13,6 +13,46 @@
   <body>
     
     <?php include('./php/header.php') ?>
+
+    <section class="section subheader">
+      <div class="container">
+        <div class="subheader__wrapper">
+          <nav class="subheader-menu__container">
+            <ul class="subheader-menu__list">
+              <li class="subheader-menu__item primary"><a href="./index.php">Главная</a></li>
+              <li class="subheader-menu__item secondary">Каталог</li>
+            </ul>
+          </nav>
+          <!-- /.subheader-menu__container -->
+          <form action="" class="filter subheader__filter">
+            <div class="input-group filter-number filter__input-group">
+              <label for="filter-number" class="filter__label secondary">Сортировать по:</label>
+              <div class="filter-number__icon"><i class="fas fa-angle-down"></i></div>
+              <select name="numberName" id="filter-number" class="filter-number__select">
+                <option value="new" class="filter-number__option test">Сначала новые</option>
+                <option value="old" class="filter-number__option test">Сначала старые</option>
+                <option value="cheap" class="filter-number__option">По убыванию цены</option>
+                <option value="expensive" class="filter-number__option">По возрастанию цены</option>
+                <option value="popular" class="filter-number__option">По популярности</option>
+              </select>              
+            </div>
+            <div class="input-group filter-sort filter__input-group">
+              <label for="filter-sort" class="filter__label secondary">Товаров на стр.:</label>
+              <div class="filter-sort__icon"><i class="fas fa-angle-down"></i></div>
+              <select name="sortName" id="filter-sort" class="filter-sort__select">
+                <option value="24">24 на странице</option>
+                <option value="15">15 на странице</option>
+                <option value="10">10 на странице</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <!-- /.subheader__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section subheader -->
+
     <?php include('./php/services.php') ?>
     <?php include('./php/footer.php') ?>
     

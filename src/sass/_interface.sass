@@ -14,3 +14,277 @@ input
 div
   &.invalid
     color: tomato
+.btn
+  display: inline-block
+  color: primary
+  padding: 0.9rem 2.2rem
+  font-size: 1rem
+  font-weight: 500
+  letter-spacing: 0.14px
+  border: 2px solid $primary
+  box-shadow: inset 0 1px 0 rgba(87, 87, 87, 0.05)
+  cursor: pointer
+  transition: all 0.2s
+  &:hover
+    color: $orange
+    border: 2px solid $orange
+  &__icon
+    display: inline-block
+    margin-left: 1rem
+    font-size: 0.785rem
+.section
+  &__title
+    font-family: 'DIN Pro Light', sans-serif
+    font-size: 1.714rem
+    font-weight: 300
+    text-align: center
+    font-size: 2.517rem
+    letter-spacing: 0.4px
+.label
+  position: absolute
+  top: 15px
+  left: -10px
+  &__container
+  &__image
+    &-container
+      position: relative
+  &__value
+    position: absolute
+    left: 9px
+    top: 7px
+    font-family: 'DIN Pro Light', sans-serif
+    font-size: 2.142rem
+    font-weight: 400
+    color: $light
+    text-align: center
+menu
+  padding: 1rem
+  position: fixed
+  display: flex
+  align-items: center
+  justify-content: start
+  width: 100%
+  height: 100vh
+  background-color: rgba(3, 3, 3, 0.95)
+  left: 0
+  margin: 0
+  top: 0
+  z-index: 99
+  transform: translateX(-100%)
+  transition: all 0.2s
+.mobile
+  &-menu
+    margin-top: 1rem
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &__active
+      transform: translateX(0%)
+    &__close
+      &-btn        
+        position: absolute
+        left: 0
+        top: 0
+        width: 50px
+        height: 50px
+        background-color: transparent
+        background-image: url("../img/btn-close.svg")
+        background-repeat: no-repeat
+        background-position: center
+        border: none
+        margin: 12px
+        cursor: pointer
+        outline: none
+    &__item
+      position: relative
+      display: inline-block
+      width: 150px
+      font-family: 'DIN Pro Light', sans-serif
+      font-weight: normal
+      font-size: 1.3rem
+      padding: 1.5rem 0 0.5rem 0
+      border-bottom: 1px solid #525252
+    &__text
+      color: $light
+    &__image
+      font-size: 0.9rem
+      margin-left: 0.5rem
+    &__btn
+      display: none
+      position: absolute
+      left: 1.5rem
+      top: 4.5rem
+      background-color: #F6F6F6
+      width: 38px
+      height: 38px
+      border-radius: 50%
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+      cursor: pointer
+      outline: none
+      z-index: 80
+      &-line
+        position: absolute
+        width: 18px
+        height: 2px
+        background-color: $orange
+        top: 50%
+        left: 50%
+        margin-top: -1px
+        margin-left: -9px
+        &:nth-child(1)
+          transform: translateY(-6px)        
+        &:nth-child(3)
+          transform: translateY(6px)
+.submobile 
+  position: fixed
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 1rem
+  width: 100%
+  height: 100vh
+  background-color: rgba(3, 3, 3, 0.95)
+  left: 0
+  margin: 0
+  top: 0
+  z-index: 99
+  transform: translateX(100%)
+  transition: all 0.2s
+.mobile
+  &-submenu
+    margin-top: 1rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &__active
+      transform: translateX(0%)
+    &__close
+      &-btn        
+        position: absolute
+        right: 0
+        top: 0
+        width: 50px
+        height: 50px
+        background-color: transparent
+        background-image: url("../img/btn-close.svg")
+        background-repeat: no-repeat
+        background-position: center
+        border: none
+        margin: 12px
+        cursor: pointer
+        outline: none
+    &__item
+      position: relative
+      display: inline-block
+      width: 150px
+      text-align: right
+      font-family: 'DIN Pro Light', sans-serif
+      font-weight: normal
+      font-size: 1.3rem
+      padding: 1.5rem 0 0.5rem 0
+      border-bottom: 1px solid #525252
+    &__text
+      color: $light
+      text-align: right
+    &__image
+      font-size: 0.9rem
+      margin-left: 0.5rem
+    &__btn
+      display: none
+      position: absolute
+      right: 1.5rem
+      top: 4.5rem
+      background-color: #F6F6F6
+      width: 38px
+      height: 38px
+      border-radius: 50%
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+      cursor: pointer
+      outline: none
+      z-index: 80
+      &-line
+        position: absolute
+        width: 18px
+        height: 2px
+        background-color: $primary
+        top: 50%
+        left: 50%
+        margin-top: -1px
+        margin-left: -9px
+        &:nth-child(1)
+          transform: translateY(-6px)        
+        &:nth-child(3)
+          transform: translateY(6px)
+.subheader
+  margin-top: 4.1rem
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &-menu
+    &__list
+      display: flex
+    &__item
+      position: relative
+      font-family: 'DIN Pro Regular', sans-serif
+      font-size: 1.142rem
+      font-weight: normal
+      letter-spacing: -0.4px
+      padding-right: 1.1rem
+      padding-left: 1.1rem
+      &:first-child
+        padding-left: 0
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 1px
+        height: 13px
+        background-color: $secondary
+.filter
+  display: flex
+  &__label
+    margin-bottom: 0.7rem
+    font-family: 'DIN Pro Regular', sans-serif
+    font-weight: normal
+    display: block
+  &__select
+    display: block
+  &-number
+    position: relative
+    &__select
+      position: relative
+      width: 22.857rem
+      height: 3.1rem
+      padding-left: 1.3rem
+      border: 1px solid #d0d0d0
+      appearance: none
+      background-color: transparent
+    &__option
+      margin-left: 0.5rem
+    &__icon
+      position: absolute
+      right: 20px
+      bottom: 0.9rem
+      z-index: -1
+  &-sort
+    position: relative
+    &__select
+      position: relative
+      width: 14.428rem
+      height: 3.1rem
+      padding-left: 1.3rem
+      border: 1px solid #d0d0d0
+      appearance: none
+      background-color: transparent
+    &__icon
+      position: absolute
+      right: 20px
+      bottom: 0.9rem
+      z-index: -1
+.input
+  &-group
+    margin-left: 2rem
+    display: flex
+    flex-direction: column
