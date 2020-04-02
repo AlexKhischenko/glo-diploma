@@ -58,6 +58,10 @@
       max-width: 45rem
     &__image
       right: 0
+  //TIMER
+  .timer
+    &__space
+      margin: 0 1.5rem
 @media screen and ( max-width: 991px )
   //SETTINGS
   .col-25
@@ -158,12 +162,18 @@
         margin-top: 6rem
   //CATEGORIES
   .categories
+    &__title
+      &::after, &::before        
+        display: none
     &__variety
       flex-wrap: wrap
       justify-content: space-around
   //POPULAR
   .popular
-    margin-top: 4rem
+    margin-top: 6rem
+    &__title
+      &::after, &::before        
+        display: none
     &__container
       flex-wrap: wrap
       justify-content: space-around
@@ -177,6 +187,29 @@
           font-size: 1.8rem
     &__btn
       margin-top: 0
+  //TIMER
+  .timer
+    padding: 3rem 0 3rem
+    background-color: #F6F6F6
+    &__title
+      &::after, &::before        
+        display: none
+    &__container
+      justify-content: space-around
+    &__first
+      &-wrap
+        width: 10.6rem
+        height: 10.6rem
+    &__second
+      &-wrap
+        width: 10rem
+        height: 10rem 
+    &__space
+      margin: 0 1.5rem
+      &-title
+        font-size: 1.8rem
+    &__number
+      font-size: 4rem
 @media screen and ( max-width: 759px )
   //HEADER
   .header
@@ -204,6 +237,22 @@
     &-submenu
       &__btn
         display: block
+  //TIMER
+  .timer
+    &__first
+      &-wrap
+        width: 9.6rem
+        height: 9.6rem
+    &__second
+      &-wrap
+        width: 9rem
+        height: 9rem 
+    &__space
+      margin: 0 1rem
+      &-title
+        font-size: 1.5rem
+    &__number
+      font-size: 3rem  
 @media screen and ( max-width: 570px )
   //SETTINGS
   .col-25
@@ -250,4 +299,23 @@
   .popular
     &-card
       margin-right: 0
+  //TIMER
+  .timer
+    &__first
+      &-wrap
+        width: 5.7rem
+        height: 5.7rem
+        border: none
+    &__second
+      &-wrap
+        width: 5.6rem
+        height: 5.6rem 
+        border-width: 2px
+    &__space
+      margin: 0 0.3rem
+      &-title
+        font-family: 'DIN Pro Regular', sans-serif
+        font-size: 1rem
+    &__number
+      font-size: 1.8rem 
           

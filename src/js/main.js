@@ -218,12 +218,25 @@ $(document).ready(function(){
       };
     };
   });
-
+  // Разворачивание категирий в секции Categories
   let categoriesBtn = $('.categories__btn');
   let categoriesItem = $('.test');  
   categoriesBtn.click( function (event) {
     event.preventDefault();
     $('.test').toggleClass('categories__item-hidden');   
   });
+  // $(function(){
+  //   var $button    = $('.js-button'),
+  //       $container = $('.js-container');
+    
+  //   $button.on('click', function(){
+  //     var toggleText = $(this).data('toggle-text');
+      
+  //     $(this).data('toggle-text', $(this).text())
+  //            .text(toggleText);
+      
+  //     $container.toggleClass('hidden');
+  //   });
+  // });
 
 });

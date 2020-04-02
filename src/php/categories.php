@@ -13,14 +13,14 @@
             <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-lightbulb"></i>Источники света</a>
             <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-tools"></i>Инструменты</a>
             <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-heartbeat"></i>Здоровье</a>
-            <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-car"></i>>Авто</a>
+            <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-car"></i>Авто</a>
             <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-mobile-alt"></i>Мобильные телефоны</a>
             <a href="./catalog.php" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-book"></i>Книги</a>
           
           
           </div>
           <!-- /.categories__variety -->
-          <div class="categories__btn"><a href="./catalog.php" class="btn btn-more">Ещё<i class="btn-more__icon fas fa-angle-down"></i></a></div>
+          <div class="categories__btn" data-toggle-text="Скрыть"><a href="./catalog.php" class="btn btn-more">Ещё<i class="btn-more__icon fas fa-angle-down"></i></a></div>
         </div>
       </div>
       <!-- /.container -->
