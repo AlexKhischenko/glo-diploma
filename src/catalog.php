@@ -29,8 +29,8 @@
               <label for="filter-number" class="filter__label secondary">Сортировать по:</label>
               <div class="filter-number__icon"><i class="fas fa-angle-down"></i></div>
               <select name="numberName" id="filter-number" class="filter-number__select">
-                <option value="new" class="filter-number__option test">Сначала новые</option>
-                <option value="old" class="filter-number__option test">Сначала старые</option>
+                <option value="new" class="filter-number__option">Сначала новые</option>
+                <option value="old" class="filter-number__option">Сначала старые</option>
                 <option value="cheap" class="filter-number__option">По убыванию цены</option>
                 <option value="expensive" class="filter-number__option">По возрастанию цены</option>
                 <option value="popular" class="filter-number__option">По популярности</option>
@@ -53,6 +53,9 @@
     </section>
     <!-- /.section subheader -->
 
+    
+
+    <?php include('./php/category.php') ?>
     <?php include('./php/services.php') ?>
     <?php include('./php/footer.php') ?>
     

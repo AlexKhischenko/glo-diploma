@@ -34,29 +34,24 @@
               </a>              
             </li>
           </ul>
-        </menu>
-        <div class="mobile-submenu__btn">
-          <span class="mobile-submenu__btn-line"></span>
-          <span class="mobile-submenu__btn-line"></span>
-          <span class="mobile-submenu__btn-line"></span>
-        </div>
-        <div class="submobile">
-          <a class="mobile-submenu__close-btn" href="#close"></a>
           <ul class="mobile-submenu">
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">Объявления</a></li>
-            <li class="mobile-submenu__item"><a href="./catalog.php" class="mobile-submenu__text">Каталоги</a></li>
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">Участники</a></li>
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">Партнеры</a></li>
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">О платформе</a></li>
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">Новости</a></li>
-            <li class="mobile-submenu__item"><a href="#" class="mobile-submenu__text">
-              <i class="fas fa-search mobile-submenu__image"></i>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Объявления</a></li>
+            <li class="mobile-menu__item"><a href="./catalog.php" class="mobile-menu__text">Каталоги</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Участники</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Партнеры</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">О платформе</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Новости</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">
+              <i class="fas fa-search mobile-menu__image"></i>
             </a></li>
           </ul>
-        </div>
+        </menu>
         <nav class="nav">
           <div class="logo-small nav__logo-small">
             <a href="./index.php"><img src="./img/header/logo-small.png" alt="Logo"></a>
+            <div class="logo-small__text">
+              <h2 class="logo-small__title">BMC Sales</h2>
+            </div>
           </div>
           <ul class="menu nav__menu">
             <li class="menu__item">
