@@ -255,7 +255,7 @@
     margin-top: 4rem
     &__title
       &::after, &::before
-        display: none
+        display: none   
   //FOOTER
   .footer
     margin-top: 4rem
@@ -286,6 +286,26 @@
       &__pricetag
         &-word
           font-size: 1.8rem
+    &__pages
+      margin-left: 0
+  .pages
+    &__container
+      margin-bottom: 1rem
+    &__number
+      width: 2.5rem
+      height: 2.5rem
+      &:hover
+        color: $primary
+        border-color: $primary
+    &__link
+      padding: 0.8rem
+      &:hover
+        color: $primary
+  //LIKEMORE
+  .likemore
+    &__title
+      &::after, &::before
+        display: none        
 @media screen and ( max-width: 759px )
   //SETTINGS
   .col-75
@@ -388,6 +408,12 @@
     &__title
       &::after
         width: 80%
+  .pages
+    &__number
+      width: 2.5rem
+      height: 2.5rem
+    &__link
+      padding: 0.8rem
 @media screen and ( max-width: 570px )
   //SETTINGS
   .col-75

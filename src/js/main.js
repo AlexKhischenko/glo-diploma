@@ -218,13 +218,55 @@ $(document).ready(function(){
       };
     };
   });
-  // Разворачивание категирий в секции Categories
+  // Разворачивание категорий в секции Categories
   let categoriesBtn = $('.categories__btn');
   let categoriesItem = $('.test');  
   categoriesBtn.click( function (event) {
     event.preventDefault();
     $('.test').toggleClass('categories__item-hidden');   
   });
+
+  // Смена картинки в секции Product
+  let productImageBig = $('.product-order__image');
+  let productImageSmall = $('.product-order__element');
+  productImageSmall.click( function() {
+    productImageBig.removeClass('product-order__image--active');
+    productImageSmall.removeClass('product-order__element--active');
+    $('.product-order__image[data-image='+$(this).attr('data-image')+']')
+    .addClass('product-order__image--active');
+    $(this).addClass('product-order__element--active');    
+  });
+
+  // Выбор цвета в секции Product
+  let colorPicker = $('.color-item');
+  colorPicker.click( function() {
+    colorPicker.removeClass('color-item--active');
+    $(this).addClass('color-item--active');
+  });
+
+  // Выбор способа доставки в секции Product
+  let deliveryTab = $('.delivery__tab');
+  let deliveryClick = $('.delivery-click');
+  let deliveryTabContent = $('.delivery__tab-content');
+  deliveryClick.click( function() {
+    deliveryTab.removeClass('delivery__tab--active');
+    deliveryTabContent.removeClass('delivery__tab-content--active');
+    $('.delivery__tab-content[data-delivery-tab='+$(this).attr('data-delivery-tab')+']')
+    .addClass('delivery__tab-content--active');
+    $('.delivery__tab[data-delivery-tab='+$(this).attr('data-delivery-tab')+']')
+    .addClass('delivery__tab--active');
+  });
+
+  // Выбор пункта самовывоза
+  let tabContentLabel = $('.tab-content__label');
+  tabContentLabel.click( function () {
+    tabContentLabel.removeClass('tab-content--active');
+    $(this).addClass('tab-content--active');
+  });
+
+
+
+
   // $(function(){
   //   var $button    = $('.js-button'),
   //       $container = $('.js-container');

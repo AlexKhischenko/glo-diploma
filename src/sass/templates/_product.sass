@@ -1,0 +1,251 @@
+.product
+  &-order
+    &__view
+      padding-top: 0.4rem
+      width: 40.3%
+    &__wrapper
+      display: flex
+      margin-top: 3.8rem
+    &__container
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-bottom: 2.1rem
+      max-width: 39.285rem
+      width: 100%
+      min-height: 39.285rem
+      border: 1px solid #d7d7d7
+    &__array
+      display: flex
+      justify-content: space-between
+      width: 100%
+    &__element
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 87px
+      height: 87px
+      border: 1px solid #d7d7d7
+      cursor: pointer
+      &--active
+        border-color: $orange
+    &__image
+      display: none
+      &--active
+        display: block
+    &__data 
+      width: 59.7%
+      padding-left: 2.2rem
+.data
+  &__title
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 1.5rem
+  &__header
+    font-family: 'DIN Pro Bold', sans-serif
+    font-size: 1.714rem
+  &__rating
+    display: flex
+    &-text
+      display: inline-block
+      margin-right: 1.2rem
+      color: $secondary
+    &-word1
+      font-family: 'DIN Pro Bold', sans-serif
+    &-stars
+      font-size: 1.071rem
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 2.3rem
+    padding-bottom: 2.4rem    
+    border-top: 1px solid #d7d7d7
+    border-bottom: 1px dashed #d7d7d7
+    &-container
+      display: flex
+      flex-direction: column
+    &-word2
+      display: inline-block
+      margin-right: 0.75rem
+      font-size: 3.428rem
+    &-word3
+      font-family: 'DIN Pro Bold', sans-serif
+      color: $primary
+    &-text
+      font-size: 1.142rem
+      color: $secondary
+  &__pricetag
+    display: inline-block
+    margin-bottom: 0.9rem
+    margin-right: 0.5rem
+    font-size: 1.714rem
+    font-family: 'DIN Pro Bold', sans-serif
+  &__colors
+    padding-top: 2.15rem
+    padding-bottom: 2.15rem
+    border-bottom: 1px dashed #d7d7d7
+    &-container
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+    &-list
+      display: flex
+      align-items: center
+    &-title
+      margin-right: 2.2rem
+      font-family: 'DIN Pro Medium', sans-serif
+      font-size: 1.142rem
+    &-item
+      margin-right: 0.85rem
+  &__delivery
+    padding-top: 1.8rem
+    padding-bottom: 2.2rem
+    border-bottom: 1px dashed #d7d7d7
+  &__buttons
+    display: flex
+    align-items: center
+    width: 100%
+    padding: 2.1rem 0
+    border-bottom: 1px dashed #d7d7d7
+  &__share
+    padding-top: 1.9rem
+.color
+  &-item
+    display: flex
+    align-items: center
+    padding-left: 1px
+    height: 30px
+    border: 1px solid #d7d7d7
+    cursor: pointer
+    &--active
+      border-color: $orange
+    &__color
+      display: block
+      width: 26px
+      height: 26px
+      &--green        
+        background-color: #86c255
+      &--yellow        
+        background-color: #e9eb5b
+      &--red        
+        background-color: #e84b4b
+      &--blue        
+        background-color: #4b91e8
+    &__text
+      display: block
+      padding: 0 1.3rem
+.delivery
+  &__title
+    display: block
+    margin-bottom: 2rem
+    font-family: 'DIN Pro Medium', sans-serif
+    font-size: 1.142rem
+  &__tabs
+    display: flex
+  &__tab
+    height: 3.1rem
+    max-width: 10.2rem
+    width: 100%
+    border-bottom: 1px solid #d7d7d7
+    &-second
+      padding-left: 2rem
+      max-width: 100%
+      border-left: 1px solid #d7d7d7
+    &--active
+      border-bottom: none
+    &-content
+      display: none
+      &--active
+        display: block
+    &-label
+      position: relative
+      display: flex
+      align-items: center
+    &-radio
+      position: absolute
+      opacity: 0
+      &:checked ~ .delivery
+        &__tab
+          &-fake
+            &::before
+              opacity: 1
+    &-text
+      font-family: 'DIN Pro Medium', sans-serif
+      font-size: 1.142rem
+    &-fake
+      position: relative
+      display: block
+      margin-right: 0.7rem
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      border: 1px solid #cccccc
+      background-color: #ffffff
+      box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2)
+      &::before
+        content: ''
+        position: absolute
+        display: block
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: $primary
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        opacity: 0
+        transition: all 0.2s
+        z-index: 50
+    &-container
+      width: 100%
+      padding-top: 1.85rem
+      padding-left: 2.1rem
+.tab
+  &-content
+    &__title
+      display: block
+      margin-bottom: 1.4rem
+      font-family: 'DIN Pro Medium', sans-serif
+      font-size: 1.142rem
+    &__wrap
+      display: flex
+    &__label
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      margin-right: 0.7rem
+      padding: 0.25rem 0.4rem 0.25rem 0.4rem
+      border: 1px solid #d7d7d7
+    &--active
+      border-color: $orange
+.share
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  &__social
+  &__cart
+    display: block
+    margin-right: 1.8rem
+  &__favorite
+    display: block
+    margin-right: auto
+  &__text
+    display: block
+  &__social
+  &__word
+    font-family: 'DIN Pro Bold', sans-serif
+  &__icon
+    display: inline-block
+    color: $secondary
+    font-size: 1.142rem
+    margin-left: 1.15rem
+    transition: all 0.2s
+    &:hover
+      color: $primary
+
+
+
+

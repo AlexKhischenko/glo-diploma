@@ -422,6 +422,20 @@
           <!-- /.col-25-2 category__card -->
         </div>
         <!-- /.category__container -->
+        <nav class="category__pages pages">
+          <p class="pages__info secondary">Найдено товаров: <span class="pages__info-word">510</span>. Показано с <span class="pages__info-word">1</span> по <span class="pages__info-word">15</span></p>
+          <ul class="pages__container">
+            <li class="pages__number pages__number-first">1</li>
+            <li class="pages__number"><a href="#" class="pages__link">2</a></li>
+            <li class="pages__number"><a href="#" class="pages__link">3</a></li>
+            <li class="pages__number"><a href="#" class="pages__link">4</a></li>
+            <li class="pages__number"><a href="#" class="pages__link">...</a></li>
+            <li class="pages__number"><a href="#" class="pages__link">30</a></li>
+            <li class="pages__number pages__number-last"><a href="#" class="pages__link"><i class="fas fa-arrow-right pages__link-icon"></i></a></li>
+          </ul>
+
+        </nav>
+        <!-- /.category__pages pages -->
       </div>
       <!-- /.category__view -->
     </div>

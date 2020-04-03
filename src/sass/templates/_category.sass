@@ -124,3 +124,48 @@
     margin-top: 4.1rem
     display: flex
     justify-content: center
+  &__pages
+    margin-top: -1.6rem
+    margin-left: 0.8rem
+    display: flex
+    flex-direction: column
+.pages
+  &__info
+    margin: 0 auto
+    font-size: 1.142rem
+    font-family: 'DIN Pro Regular', sans-serif
+    &-word
+      font-family: 'DIN Pro Bold', sans-serif
+  &__container
+    margin: 0 auto
+    margin-top: 2.15rem
+    transform: translateX(5px)
+    display: flex
+  &__number
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 0.7rem
+    width: 3.214rem
+    height: 3.214rem
+    border: 2px solid $primary
+    transition: all 0.2s
+    &:hover
+      border-color: $orange
+      color: $orange
+    &-first
+      background-color: #e7e7e7
+      border: none
+      &:hover
+        color: $primary
+    &-last
+      background-color: $orange
+      border: none
+  &__link
+    display: block
+    padding: 1rem
+    transition: all 0.2s
+    &:hover
+      color: $orange
+    &-icon      
+      color: $light
