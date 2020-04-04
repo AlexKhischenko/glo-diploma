@@ -405,7 +405,7 @@ div.invalid {
     color: #ffffff;
     text-align: center; }
 
-menu {
+.menumobile {
   padding: 1rem;
   position: fixed;
   display: -webkit-box;

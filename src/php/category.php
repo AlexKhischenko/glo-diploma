@@ -44,7 +44,7 @@
         <div class="category__container">
           <div class="col-25-2 category-card">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/blouse.png" alt="Блузка"></a>
+              <a href="./productcard.php"><img src="./img/popular/blouse.png" alt="Блузка"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -65,7 +65,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/jacket.png" alt="Куртка"></a>
+              <a href="./productcard.php"><img src="./img/popular/jacket.png" alt="Куртка"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -86,7 +86,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/snickers.png" alt="Кросовки"></a>
+              <a href="./productcard.php"><img src="./img/popular/snickers.png" alt="Кросовки"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -107,7 +107,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/backpack.png" alt="Рюкзак"></a>
+              <a href="./productcard.php"><img src="./img/popular/backpack.png" alt="Рюкзак"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -128,10 +128,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/shoes.png" alt="Туфли"></a>
+              <a href="./productcard.php"><img src="./img/discount/shoes.png" alt="Туфли"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">40%</p> 
                 </div>                
               </div>
@@ -158,10 +158,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/dresses.png" alt="Сарафан"></a>
+              <a href="./productcard.php"><img src="./img/discount/dresses.png" alt="Сарафан"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">25%</p> 
                 </div>                
               </div>
@@ -188,10 +188,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/jacket-1.png" alt="Пальто детское"></a>
+              <a href="./productcard.php"><img src="./img/discount/jacket-1.png" alt="Пальто детское"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">35%</p> 
                 </div>                
               </div>
@@ -218,10 +218,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/tie.png" alt="Галстук"></a>
+              <a href="./productcard.php"><img src="./img/discount/tie.png" alt="Галстук"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">20%</p> 
                 </div>                
               </div>
@@ -248,10 +248,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/backpack.png" alt="Рюкзак"></a>
+              <a href="./productcard.php"><img src="./img/discount/backpack.png" alt="Рюкзак"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">20%</p> 
                 </div>                
               </div>
@@ -278,7 +278,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/blouse.png" alt="Блузка"></a>
+              <a href="./productcard.php"><img src="./img/popular/blouse.png" alt="Блузка"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -299,7 +299,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/jacket.png" alt="Куртка"></a>
+              <a href="./productcard.php"><img src="./img/popular/jacket.png" alt="Куртка"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -320,7 +320,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/snickers.png" alt="Кросовки"></a>
+              <a href="./productcard.php"><img src="./img/popular/snickers.png" alt="Кросовки"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -341,7 +341,7 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/popular/backpack.png" alt="Рюкзак"></a>
+              <a href="./productcard.php"><img src="./img/popular/backpack.png" alt="Рюкзак"></a>
             </div>
             <!-- /.category-card__image-container -->
             <div class="category-card__container">
@@ -362,10 +362,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/shoes.png" alt="Туфли"></a>
+              <a href="./productcard.php"><img src="./img/discount/shoes.png" alt="Туфли"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">40%</p> 
                 </div>                
               </div>
@@ -392,10 +392,10 @@
           <!-- /.col-25-2 category__card -->
           <div class="col-25-2 category-card ">
             <div class="category-card__image-container">
-              <a href="./productcard.php"><img src="./img" data-src="./img/discount/dresses.png" alt="Сарафан"></a>
+              <a href="./productcard.php"><img src="./img/discount/dresses.png" alt="Сарафан"></a>
               <div class="label label__container">
                 <div class="label__image-container">
-                  <img src="./img" data-src="./img/discount/label.png" alt="Label">
+                  <img src="./img/discount/label.png" alt="Label">
                   <p class="label__value">25%</p> 
                 </div>                
               </div>

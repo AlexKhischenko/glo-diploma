@@ -10,7 +10,7 @@
               </div>
             </div>
             <div class="timer__space">
-              <img src="./img" data-src="./img/timer/cross.png" alt="Cross">
+              <img src="./img/timer/cross.png" alt="Cross">
             </div>
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="timer__space">
-              <img src="./img" data-src="./img/timer/cross.png" alt="Cross">
+              <img src="./img/timer/cross.png" alt="Cross">
             </div>
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="timer__space">
-              <img src="./img" data-src="./img/timer/cross.png" alt="Cross">
+              <img src="./img/timer/cross.png" alt="Cross">
             </div>
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">

@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
   // Lazy load для картинок
-  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function() {
-    img.removeAttribute('data-src');
-    };
-  });
+  // [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+  //   img.setAttribute('src', img.getAttribute('data-src'));
+  //   img.onload = function() {
+  //   img.removeAttribute('data-src');
+  //   };
+  // });
 
   //Инициализация слайдера секции Hero
   var heroSwiper = new Swiper('.hero__swiper-container', {
@@ -176,10 +176,9 @@ $(document).ready(function(){
   
   // Mobile menu
   let mobileMenuBtn = $('.mobile-menu__btn');
-  let menu = $('menu');
+  let menu = $('.menumobile');
   let closeMobileMenu = $('.mobile-menu__close-btn');
   mobileMenuBtn.click( function() {
-    console.log('click');
 		menu.toggleClass('mobile-menu__active');
   });
   closeMobileMenu.click(function() {
@@ -191,7 +190,6 @@ $(document).ready(function(){
   let submobile = $('.submobile');
   let closeSubMobileMenu = $('.mobile-submenu__close-btn');
   mobileSubMenuBtn.click( function() {
-    console.log('click');
 		submobile.toggleClass('mobile-submenu__active');
   });
   closeSubMobileMenu.click(function() {

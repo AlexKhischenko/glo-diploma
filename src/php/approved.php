@@ -4,7 +4,7 @@
         <div class="approved__container product-section">
           <div class="col-30 product-section__card">
             <div class="product-section__image">
-              <img src="./img" data-src="./img/approved/boy.png" alt="Boy">
+              <img src="./img/approved/boy.png" alt="Boy">
             </div>
             <!-- /.product-section__image -->
             <div class="product-section__data">
@@ -16,7 +16,7 @@
           </div>
           <div class="col-30 product-section__card">
             <div class="product-section__image">
-              <img src="./img" data-src="./img/approved/girl.png" alt="Boy">
+              <img src="./img/approved/girl.png" alt="Boy">
             </div>
             <!-- /.product-section__image -->
             <div class="product-section__data">
@@ -28,7 +28,7 @@
           </div>
           <div class="col-30 product-section__card">
             <div class="product-section__image">
-              <img src="./img" data-src="./img/approved/backpack.png" alt="Boy">
+              <img src="./img/approved/backpack.png" alt="Boy">
             </div>
             <!-- /.product-section__image -->
             <div class="product-section__data">

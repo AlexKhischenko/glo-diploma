@@ -15,8 +15,8 @@
           <div class="col-25 mobile footer__mobile">
             <h3 class="mobile__heading">Мобильное приложение</h3>
             <div class="mobile__apps">
-              <a href="https://apps.apple.com/"><img src="./img" data-src="./img/footer/apple-app.png" alt="Apple logo"></a>
-              <a href="https://store.google.com/"><img src="./img" data-src="./img/footer/google-app.png" alt="Google logo"> </a>                           
+              <a href="https://apps.apple.com/"><img src="./img/footer/apple-app.png" alt="Apple logo"></a>
+              <a href="https://store.google.com/"><img src="./img/footer/google-app.png" alt="Google logo"> </a>                           
             </div>
             <a class="btn">Ваш профиль<i class="fas fa-angle-right btn__icon"></i></a>
           </div>
@@ -37,7 +37,7 @@
           <div class="col-25 contacts footer__contacts">
             <div class="logo-black footer__logo-black">
               <div class="logo-black__image">
-                <a href="#"><img src="./img" data-src="./img/footer/logo-black.png" alt="Logo-black"></a>
+                <a href="#"><img src="./img/footer/logo-black.png" alt="Logo-black"></a>
               </div>
               <div class="logo-black__text">
                 <h2 class="logo-black__name">BMC Sales</h2>
@@ -51,7 +51,7 @@
             </div>
             <!-- /.contacts__data -->
             <div class="contacts__banks">
-              <a href="#"><img src="./img" data-src="./img/footer/bank-system.png" alt="Bank systems"></a>
+              <a href="#"><img src="./img/footer/bank-system.png" alt="Bank systems"></a>
             </div>
             <!-- /.contacts__banks -->
           </div>

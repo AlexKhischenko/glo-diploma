@@ -4,23 +4,23 @@
       <div class="product-order__view">
         <div class="product-order__container">
           <div class="product-order__image product-order__image--active" data-image="1">
-            <img src="./img" data-src="./img/product/big-1.png" alt="Рюкзак">
+            <img src="./img/product/big-1.png" alt="Рюкзак">
           </div>
           <!-- /.product-order__image -->
           <div class="product-order__image" data-image="2">
-            <img src="./img" data-src="./img/product/big-2.png" alt="Рюкзак">
+            <img src="./img/product/big-2.png" alt="Рюкзак">
           </div>
           <!-- /.product-order__image -->
           <div class="product-order__image" data-image="3">
-            <img src="./img" data-src="./img/product/big-3.png" alt="Рюкзак">
+            <img src="./img/product/big-3.png" alt="Рюкзак">
           </div>
           <!-- /.product-order__image -->
           <div class="product-order__image" data-image="4">
-            <img src="./img" data-src="./img/product/big-4.png" alt="Рюкзак">
+            <img src="./img/product/big-4.png" alt="Рюкзак">
           </div>
           <!-- /.product-order__image -->
           <div class="product-order__image" data-image="5">
-            <img src="./img" data-src="./img/product/big-5.png" alt="Рюкзак">
+            <img src="./img/product/big-5.png" alt="Рюкзак">
           </div>
           <!-- /.product-order__image -->
         </div>
@@ -28,27 +28,27 @@
         <ul class="product-order__array">
           <li class="product-order__element product-order__element--active" data-image="1">
             <div class="product-order__element-container">
-              <img src="./img" data-src="./img/product/small-1.png" alt="Рюкзак">
+              <img src="./img/product/small-1.png" alt="Рюкзак">
             </div>
           </li>
           <li class="product-order__element" data-image="2">
             <div class="product-order__element-container">
-              <img src="./img" data-src="./img/product/small-2.png" alt="Рюкзак">
+              <img src="./img/product/small-2.png" alt="Рюкзак">
             </div>
           </li>
           <li class="product-order__element" data-image="3">
             <div class="product-order__element-container">
-              <img src="./img" data-src="./img/product/small-3.png" alt="Рюкзак">
+              <img src="./img/product/small-3.png" alt="Рюкзак">
             </div>
           </li>
           <li class="product-order__element" data-image="4">
             <div class="product-order__element-container">
-              <img src="./img" data-src="./img/product/small-4.png" alt="Рюкзак">
+              <img src="./img/product/small-4.png" alt="Рюкзак">
             </div>
           </li>
           <li class="product-order__element" data-image="5">
             <div class="product-order__element-container">
-              <img src="./img" data-src="./img/product/small-5.png" alt="Рюкзак">
+              <img src="./img/product/small-5.png" alt="Рюкзак">
             </div>
           </li>
         </ul>
@@ -81,7 +81,7 @@
           </div>
           <!-- /.data__price-container -->
           <div class="data__price-code">
-            <img src="./img" data-src="./img/product/qr.png" alt="QR Code">
+            <img src="./img/product/qr.png" alt="QR Code">
           </div>
           <!-- /.data__price-code -->
         </div>
@@ -275,7 +275,7 @@
           <!-- /.viewed__title -->
           <div class="viewed__card">
             <div class="viewed__image">
-            <a href="./productcard.php"><img src="./img" data-src="./img/product/jacket-small.png" alt="Пуховик"></a>
+            <a href="./productcard.php"><img src="./img/product/jacket-small.png" alt="Пуховик"></a>
             </div>
             <!-- /.viewed__image -->
             <div class="viewed__description-container">
@@ -297,7 +297,7 @@
           <!-- /.viewed__card -->
           <div class="viewed__card">
             <div class="viewed__image">
-            <a href="./productcard.php"><img src="./img" data-src="./img/product/blouse-small.png" alt="Блузка"></a>
+            <a href="./productcard.php"><img src="./img/product/blouse-small.png" alt="Блузка"></a>
             </div>
             <!-- /.viewed__image -->
             <div class="viewed__description-container">
@@ -319,7 +319,7 @@
           <!-- /.viewed__card -->
           <div class="viewed__card">
             <div class="viewed__image">
-            <a href="./productcard.php"><img src="./img" data-src="./img/product/snickers-small.png" alt="Кросовки"></a>
+            <a href="./productcard.php"><img src="./img/product/snickers-small.png" alt="Кросовки"></a>
             </div>
             <!-- /.viewed__image -->
             <div class="viewed__description-container">

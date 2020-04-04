@@ -8,7 +8,7 @@
           </div>
           <!-- /.adv__text -->
           <div class="adv__image">
-            <img src="./img" data-src="./img/adv/phone.png" alt="Phone">
+            <img src="./img/adv/phone.png" alt="Phone">
           </div>
           <!-- /.adv__image -->
         </div>
