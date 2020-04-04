@@ -7,10 +7,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/jacket.png" alt="Блузка"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/jacket.png" alt="Блузка"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">35%</p> 
                       </div>                
                     </div>
@@ -39,10 +39,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/shoes.png" alt="Куртка"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/shoes.png" alt="Куртка"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">40%</p> 
                       </div>                
                     </div>
@@ -71,10 +71,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/dresses.png" alt="Кросовки"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/dresses.png" alt="Кросовки"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">25%</p> 
                       </div>                
                     </div>
@@ -103,10 +103,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/tie.png" alt="Рюкзак"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/tie.png" alt="Рюкзак"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">20%</p> 
                       </div>                
                     </div>
@@ -135,10 +135,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/jacket.png" alt="Блузка"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/jacket.png" alt="Блузка"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">35%</p> 
                       </div>                
                     </div>
@@ -167,10 +167,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/shoes.png" alt="Куртка"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/shoes.png" alt="Куртка"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">40%</p> 
                       </div>                
                     </div>
@@ -199,10 +199,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/dresses.png" alt="Кросовки"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/dresses.png" alt="Кросовки"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">25%</p> 
                       </div>                
                     </div>
@@ -231,10 +231,10 @@
               <div class="swiper-slide likemore-swiper__slide">
                 <div class="col-100 discount-card center">
                   <div class="discount-card__image-container">
-                    <a href="./productcard.php"><img src="./img/discount/tie.png" alt="Рюкзак"></a>
+                    <a href="./productcard.php"><img src="./img" data-src="./img/discount/tie.png" alt="Рюкзак"></a>
                     <div class="label label__container">
                       <div class="label__image-container">
-                        <img src="./img/discount/label.png" alt="Label">
+                        <img src="./img" data-src="./img/discount/label.png" alt="Label">
                         <p class="label__value">20%</p> 
                       </div>                
                     </div>

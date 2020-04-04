@@ -350,6 +350,16 @@ input.invalid {
 div.invalid {
   color: tomato; }
 
+#modalCheckbox-error {
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem; }
+
+#modal-user-name-error, #modal-user-phone-error, #modal-user-email-error {
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem; }
+
 .btn {
   display: inline-block;
   color: primary;
@@ -2869,6 +2879,222 @@ button {
     .copyright__error:hover {
       color: #ffffff; }
 
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .modal__dialog {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 36rem;
+    min-height: 39rem;
+    width: 100%;
+    background-color: rgba(32, 32, 32, 0.98);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+    padding: 2.5rem 3.5rem 2rem;
+    color: #ffffff; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    background-image: url("../img/btn-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+    outline: none; }
+  .modal__title {
+    max-width: 25rem;
+    font-family: 'DIN Pro Light', sans-serif;
+    font-size: 1.357rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.82rem;
+    margin: 0 auto;
+    margin-bottom: 2.1rem;
+    color: #ffffff; }
+    .modal__title--hidden {
+      display: none; }
+  .modal__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .modal__form--hidden {
+      display: none; }
+  .modal__label {
+    font-family: 'DIN Pro Medium', sans-serif;
+    color: #f47920;
+    font-size: 1rem; }
+  .modal__input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 3rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 0.05rem; }
+  .modal__policy {
+    position: relative;
+    margin-bottom: 2.9rem; }
+  .modal__button {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    min-width: 15.214rem;
+    padding: 1.3rem 0;
+    background-color: #ffffff;
+    border: 1px solid #f47920;
+    font-family: 'DIN Pro Medium', sans-serif;
+    color: #f47920;
+    box-shadow: 0px 0px 5px 0px #f47920; }
+  .modal__success-message {
+    display: none; }
+    .modal__success-message--visible {
+      display: block; }
+
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.3);
+  background-color: transparent;
+  font-size: 1.285rem;
+  color: #ffffff;
+  padding: 0.53rem 0; }
+  .input--light::-webkit-input-placeholder {
+    color: #ffffff; }
+  .input--light::-moz-placeholder {
+    color: #ffffff; }
+  .input--light:-ms-input-placeholder {
+    color: #ffffff; }
+  .input--light::-ms-input-placeholder {
+    color: #ffffff; }
+  .input--light::placeholder {
+    color: #ffffff; }
+  .input--light::-moz-placeholder, .input--light:-moz-placeholder {
+    opacity: 1; }
+  .input--primary {
+    color: #202020; }
+    .input--primary::-webkit-input-placeholder {
+      color: #202020; }
+    .input--primary::-moz-placeholder {
+      color: #202020; }
+    .input--primary:-ms-input-placeholder {
+      color: #202020; }
+    .input--primary::-ms-input-placeholder {
+      color: #202020; }
+    .input--primary::placeholder {
+      color: #202020; }
+
+.policy {
+  position: relative; }
+  .policy__checkbox {
+    opacity: 0;
+    position: absolute; }
+    .policy__checkbox:checked ~ .policy__label::before {
+      background-color: 333;
+      background-image: url("../img/check.svg");
+      background-repeat: no-repeat;
+      background-position: center; }
+  .policy__label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.143rem; }
+    .policy__label::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border: 1px solid #f47920;
+      border-radius: 1px;
+      cursor: pointer;
+      margin-right: 0.64rem; }
+    .policy__label--center {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+
+.modal__success-message {
+  width: 100%;
+  margin: 0 auto; }
+
+.success-message__text {
+  max-width: 25rem;
+  font-family: 'DIN Pro Medium', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.82rem;
+  margin: 1.5rem auto;
+  color: #ffffff; }
+
+.success-message__callback {
+  max-width: 25rem;
+  font-family: 'DIN Pro Medium', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.82rem;
+  margin: 0 auto;
+  color: #f47920; }
+
 @media screen and (max-width: 1350px) {
   .service-btn {
     font-size: 1rem;
@@ -3660,3 +3886,16 @@ button {
     display: none; }
   .data__price-word2 {
     font-size: 2rem; } }
+
+@media screen and (max-height: 500px) {
+  .modal__dialog {
+    min-height: 10rem;
+    padding: 1rem 2.5rem 1rem; }
+  .modal__title {
+    margin-bottom: 1rem; }
+  .modal__input-group {
+    margin-bottom: 2rem; }
+  .modal__policy {
+    margin-bottom: 2rem; }
+  .modal__button {
+    padding: 0.8rem 0; } }

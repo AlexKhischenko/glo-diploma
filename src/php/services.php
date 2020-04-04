@@ -6,7 +6,7 @@
             <div class="swiper-wrapper wide-swiper">
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://elib.kdt.kz"><img src="./img/services/slide-1.png" alt="Web-site pic"></a>
+                  <a href="http://elib.kdt.kz"><img src="./img" data-src="./img/services/slide-1.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Учись с умом с E-Библиотекой</h4>
@@ -14,7 +14,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://estol.kdt.kz"><img src="./img/services/slide-2.png" alt="Web-site pic"></a>
+                  <a href="http://estol.kdt.kz"><img src="./img" data-src="./img/services/slide-2.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Ешь не думая с Е-Столовой</h4>
@@ -22,7 +22,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://security.kdt.kz"><img src="./img/services/slide-3.png" alt="Web-site pic"></a>
+                  <a href="http://security.kdt.kz"><img src="./img" data-src="./img/services/slide-3.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Безопасность с ВМС СМБР!</h4>
@@ -30,7 +30,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://exams.kdt.kz"><img src="./img/services/slide-4.png" alt="Web-site pic"></a>
+                  <a href="http://exams.kdt.kz"><img src="./img" data-src="./img/services/slide-4.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Проверь свои знания с Exams</h4>
@@ -38,7 +38,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://elib.kdt.kz"><img src="./img/services/slide-1.png" alt="Web-site pic"></a>
+                  <a href="http://elib.kdt.kz"><img src="./img" data-src="./img/services/slide-1.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Учись с умом с E-Библиотекой</h4>
@@ -46,7 +46,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://estol.kdt.kz"><img src="./img/services/slide-2.png" alt="Web-site pic"></a>
+                  <a href="http://estol.kdt.kz"><img src="./img" data-src="./img/services/slide-2.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Ешь не думая с Е-Столовой</h4>
@@ -54,7 +54,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://security.kdt.kz"><img src="./img/services/slide-3.png" alt="Web-site pic"></a>
+                  <a href="http://security.kdt.kz"><img src="./img" data-src="./img/services/slide-3.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Безопасность с ВМС СМБР!</h4>
@@ -62,7 +62,7 @@
               </div>
               <div class="swiper-slide wide-swiper__slide">
                 <div class="wide-swiper__image-container">
-                  <a href="http://exams.kdt.kz"><img src="./img/services/slide-4.png" alt="Web-site pic"></a>
+                  <a href="http://exams.kdt.kz"><img src="./img" data-src="./img/services/slide-4.png" alt="Web-site pic"></a>
                 </div>
                 <!-- /.wide-swiper__image -->
                 <h4 class="wide-swiper__title">Проверь свои знания с Exams</h4>

@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  // Lazy load для картинок
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+    img.removeAttribute('data-src');
+    };
+  });
+
   //Инициализация слайдера секции Hero
   var heroSwiper = new Swiper('.hero__swiper-container', {
     spaceBetween: 30,
@@ -266,9 +274,7 @@ $(document).ready(function(){
 
   // Описание товара в секции Product
   let tableHeaderItem = $('.table__header-item');
-  let tableBodyItem =$('.table__body-item');
-  console.log(tableHeaderItem);
-  console.log(tableBodyItem);
+  let tableBodyItem =$('.table__body-item');  
   tableHeaderItem.click( function (){
     tableHeaderItem.removeClass('table__header-item--active');
     tableBodyItem.removeClass('table__body-item--active');
@@ -277,6 +283,122 @@ $(document).ready(function(){
     $(this).addClass('table__header-item--active');
   });
 
+  let modal = $('.modal');
+  let modalBtn = $('[data-toggle=modal]');
+  let modalCloseBtn = $('.modal__close');
+  let modalSuccessMessage = $('.modal__success-message');
+  let modalTitle = $('.modal__title');
+  let modalForm = $('.modal__form');
+
+  // Вызов модального окна любой из кнопок
+  modalBtn.click( function (event) {
+    event.preventDefault();
+    modal.toggleClass('modal--visible');
+  });
+
+  // Сброс полей модального окна после закрытия
+  function resetModalFormInputs () {
+    $('.modal__form')[0].reset();
+    if (modalSuccessMessage.hasClass('modal__success-message--visible')) {
+      modalSuccessMessage.removeClass('modal__success-message--visible');
+    };
+    if (modalTitle.hasClass('modal__title--hidden')) {
+      modalTitle.removeClass('modal__title--hidden');
+    };
+    if (modalForm.hasClass('modal__form--hidden')) {
+      modalForm.removeClass('modal__form--hidden');
+    };
+    modal.toggleClass('modal--visible');
+  };
+
+  // Закрытие модального окна крестиком
+  modalCloseBtn.click( function () {
+    resetModalFormInputs();
+  });
+
+  // Закрытие модального окна клавишей Esc
+  $(document).keydown( function(event) {
+    if (modal.hasClass('modal--visible')) {
+      if (event.which == 27) {
+        resetModalFormInputs();
+      };
+    };
+  });
+
+  // Закрытие модального окна кликом вне модального окна
+  modal.click( function(e) {
+    if (modal.is(e.target) && modal.has(e.target).length === 0) {
+      resetModalFormInputs();
+    };
+  });
+
+  // Маска для номера телефона модального окна
+  $(function() {
+    $('#modal-user-phone').data('holder', $('#modal-user-phone').attr('placeholder'));    
+    $('#modal-user-phone').focusin(function(){
+      $('#modal-user-phone').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+      $(this).attr('placeholder','+7 (___) ___-__-__');
+    });
+    $('#modal-user-phone').focusout(function(){
+      $(this).attr('placeholder', $(this).data('holder'));
+      $('#modal-user-phone').cleanVal();
+    });    
+  }); 
+
+  // Modal Form
+  $('.modal__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      modalUserName: {
+        required: true,
+        minlength: 2,
+      },
+      modalUserPhone: {
+        required: true,
+        minlength: 17,
+      },
+      // compound rule
+      modalUserEmail: {
+        required: true,
+        email: true
+      },
+      modalCheckbox: {
+        required: true,
+      },
+    },
+    messages: {
+      modalUserName: {
+        required: "Заполните поле",
+        minlength: "Введите не менее 2 символов",
+      },
+      modalUserPhone: {
+        required: "Заполните поле",
+        minlength: "Введите не менее 10 цифр"
+      },
+      modalUserEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      modalCheckbox: "Подтвердите соглашение",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "modalSend.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();          
+          modalTitle.addClass('modal__title--hidden');
+          modalForm.addClass('modal__form--hidden');
+          modalSuccessMessage.addClass('modal__success-message--visible');
+          // ym('61237666', 'reachGoal', 'callback'); return true;
+        }
+      });
+    }
+  });
+  
 
 
 

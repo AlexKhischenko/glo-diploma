@@ -5,11 +5,11 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">Школьная форма по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./productcard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./productcard.php" class="hero-swiper__button" data-toggle="modal">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image">
-                <img src="./img/hero/hero-slide-1.png" alt="Uniform" class="hero-swiper__pic">
+                <img src="./img" data-src="./img/hero/hero-slide-1.png" alt="Uniform" class="hero-swiper__pic">
               </div>
               <!-- /.her-slide__image -->
               <div class="hero-swiper__description">
@@ -22,7 +22,7 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">Школьные рюкзаки по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./productcard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./productcard.php" class="hero-swiper__button" data-toggle="modal">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--right">
@@ -39,11 +39,11 @@
             <div class="swiper-slide hero-swiper__slide">
               <div class="hero-swiper__title">
                 <h2 class="hero-swiper__heading">ПК для учебы по&nbsp;<span class="hero-swiper__words">самым выгодным</span> ценам</h2>
-                <div><a href="./productcard.php" class="hero-swiper__button">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
+                <div><a href="./productcard.php" class="hero-swiper__button" data-toggle="modal">Подробнее<i class="fas fa-angle-right hero-swiper__icon"></i></a></div>
               </div>
               <!-- /.hero-slider__title -->
               <div class="hero-swiper__image hero-swiper__image--center">
-                <img src="./img/hero/hero-slide-3.png" alt="PC" class="hero-swiper__pic">
+                <img src="./img" data-src="./img/hero/hero-slide-3.png" alt="PC" class="hero-swiper__pic">
               </div>
               <!-- /.her-slide__image -->
               <div class="hero-swiper__description">

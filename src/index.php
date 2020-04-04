@@ -23,6 +23,7 @@
     <?php include('./php/services.php') ?>    
     
     
+    <?php include('./php/modal.php') ?>
     <?php include('./php/footer.php') ?>
 
         

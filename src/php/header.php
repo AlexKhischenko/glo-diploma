@@ -48,7 +48,7 @@
         </menu>
         <nav class="nav">
           <div class="logo-small nav__logo-small">
-            <a href="./index.php"><img src="./img/header/logo-small.png" alt="Logo"></a>
+            <a href="./index.php"><img src="./img" data-src="./img/header/logo-small.png" alt="Logo"></a>
             <div class="logo-small__text">
               <h2 class="logo-small__title">BMC Sales</h2>
             </div>
@@ -81,12 +81,12 @@
             </li>
             <li class="menu__item">
               <a href="#" class="menu__text">
-                <img src="./img/header/android.svg" alt="Android" class="menu__android">
+                <img src="./img" data-src="./img/header/android.svg" alt="Android" class="menu__android">
               </a>              
             </li>
           </ul>
           <div class="access nav__access">
-            <a href="#" class="menu__text">Вход на сайт
+            <a href="#" class="menu__text" data-toggle="modal">Вход на сайт
               <i class="fas fa-lock menu__image"></i>
             </a>
           </div>
@@ -94,7 +94,7 @@
         <nav class="subnav">
           <div class="logo subnav__logo">
             <div class="logo__image">
-              <a href="./index.php"><img src="./img/header/logo-big.png" alt="Logo"></a>
+              <a href="./index.php"><img src="./img" data-src="./img/header/logo-big.png" alt="Logo"></a>
             </div>
             <div class="logo-text subnav__logo-text">
               <h2 class="logo-text__name">BMC Sales</h2>
@@ -116,7 +116,7 @@
           <!-- /.submenu subnav__submenu -->
           <div class="counter subnav__counter">
             <div class="counter__like">
-              <img src="./img/header/flag-t.png" alt="Flag">
+              <img src="./img" data-src="./img/header/flag-t.png" alt="Flag">
               <div class="counter__container">
                 <i class="far fa-heart counter__icon orange"></i>
                 <span class="counter__number orange">2</span>
@@ -124,7 +124,7 @@
             </div>
             <!-- /.counter__like -->
             <div class="counter__sale">
-              <img src="./img/header/flag-o.png" alt="Flag">
+              <img src="./img" data-src="./img/header/flag-o.png" alt="Flag">
               <div class="counter__container">
                 <i class="fas fa-shopping-bag counter__icon light"></i>
                 <span class="counter__number light">0</span>
