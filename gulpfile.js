@@ -1,12 +1,3 @@
-// // Minify and rename CSS files
-// gulp.task('mincss', function() {
-//   return gulp.src("./css/*.css")  
-//   .pipe(rename({suffix: ".min"}))  
-//   .pipe(cleanCSS())  
-//   .pipe(gulp.dest("./css"));  
-// });
-
-
 const {src, dest, watch, series} = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
@@ -23,7 +14,6 @@ function bs() {
     server: {
       baseDir: "./src"
     }
-    // proxy: "http://diploma:81/"
   });
   // watch("./src/**/*.php").on('change', browserSync.reload);
   watch("./src/**/*.html").on('change', browserSync.reload);
@@ -98,4 +88,4 @@ function imagemin(done) {
 }
 
 exports.serve = bs;
-exports.build = series(buildCSS, buildJS, html, php, fonts);
+exports.build = series(buildCSS, buildJS, html);

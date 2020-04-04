@@ -134,6 +134,9 @@
       font-size: 2rem
       letter-spacing: normal
   //HEADER
+  .header
+    &-bgm
+      background-color: $light
   .nav
     &__logo-small
       margin-right: 1.5rem
@@ -153,6 +156,8 @@
     display: none
   //HERO
   .hero
+    background-color: $light
+    border-bottom: 1px solid #d7d7d7
     &-swiper
       &__slide
         flex-direction: column
@@ -775,6 +780,14 @@
       &-word2
         font-size: 2rem
 @media screen and ( max-height: 500px )
+  //SETTINGS
+  .mobile
+    &-menu
+      &__item
+        font-size: 1rem
+        padding: 0.5rem 0 0.25rem 0
+    &-submenu
+      margin-top: 1rem
   //MODAL
   .modal
     &__dialog
@@ -788,4 +801,5 @@
     &__policy
       margin-bottom: 2rem
     &__button
-      padding: 0.8rem 0 
+      padding: 0.8rem 0
+  

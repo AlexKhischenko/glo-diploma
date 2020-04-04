@@ -10,6 +10,20 @@
     <title>Diploma</title>
   </head>
   <body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(61639852, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/61639852" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --> 
 
     <header class="header header-bgm">
       <div class="container">
@@ -407,11 +421,11 @@
       <div class="container">
         <div class="timer__wraapper">
           <h2 class="timer__title section__title">До конца скидок осталось</h2>
-          <div class="timer__container">
+          <div class="timer__container" id="clockdiv">
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Дней</span>
-                <strong class="timer__number orange">01</strong>
+                <strong class="timer__number orange days"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -420,7 +434,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Часов</span>
-                <strong class="timer__number orange">06</strong>
+                <strong class="timer__number orange hours"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -429,7 +443,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Минут</span>
-                <strong class="timer__number orange">38</strong>
+                <strong class="timer__number orange minutes"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -438,7 +452,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Секунд</span>
-                <strong class="timer__number orange">45</strong>
+                <strong class="timer__number orange seconds"></strong>
               </div>
             </div>
           </div>
