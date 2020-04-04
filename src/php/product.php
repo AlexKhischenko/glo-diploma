@@ -269,7 +269,7 @@
       <!-- /.table table__container col-75-1 -->
       <!-- <div class="product-description__table"></div> -->
       <!-- /.product-description__table table -->
-      <div class="product-description__viewed viewed col-25">
+      <div class="product-description__viewed viewed col-25-4">
         <div class="viewed__container">
           <div class="viewed__title">Недавно просмотренное</div>          
           <!-- /.viewed__title -->
@@ -340,7 +340,7 @@
           </div>
           <!-- /.viewed__card -->
         </div>
-        <!-- /.viewed__container col-25 -->
+        <!-- /.viewed__container col-25-4 -->
       </div>
       <!-- /.product-description__viewed viewed -->
     </div>
