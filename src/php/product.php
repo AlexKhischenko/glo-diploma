@@ -1,7 +1,5 @@
 <section class="section product">
   <div class="container">
-
-
     <div class="product-order__wrapper">
       <div class="product-order__view">
         <div class="product-order__container">
@@ -206,7 +204,146 @@
     <!-- /.product-order__wrapper -->
     
     
-    <div class="product-description__wrapper"></div>
+    <div class="product-description__wrapper">
+      <div class="product-description__table table table__container">
+        <div class="table__header">
+          <div class="table__feature table__header-item table__header-item--active" data-table-tab="1">Характеристики товара</div>
+          <!-- /.table__feature -->
+          <div class="table__seller table__header-item" data-table-tab="2">Продавец</div>
+          <!-- /.table__seller -->
+          <div class="table__other table__header-item" data-table-tab="3">Товар на других сайтах</div>
+          <!-- /.table__other -->
+        </div>
+        <!-- /.table__header -->
+        <div class="table__body">
+          <div class="table__body-feature table__body-item table__body-item--active" data-table-tab="1">
+            <div class="table__row">
+              <div class="table__col-left">ИНТ товара:</div>
+              <div class="table__col-right">GCN8C1593</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Номер товара:</div>
+              <div class="table__col-right">1344</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Тип предложения:</div>
+              <div class="table__col-right">Розничное</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Форма:</div>
+              <div class="table__col-right">Обычная продажа</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Категория:</div>
+              <div class="table__col-right">Рюкзаки</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Страна производитель:</div>
+              <div class="table__col-right">Китай (CN)</div>
+            </div>
+            <!-- /.table__row -->
+            <div class="table__row">
+              <div class="table__col-left">Компания производитель:</div>
+              <div class="table__col-right">PUMA</div>
+            </div>
+            <!-- /.table__row -->
+          </div>
+          <!-- /.table__body-feature -->
+          <div class="table__body-seller table__body-item" data-table-tab="2">
+            <p class="table__body-description">Спортивный рюкзак Originals Backpack не нуждается в особом представлении. Новая версия оснащена удобными карманами, а также мягкими лямками, спинкой и основанием. Фирменный логотип подчеркивает ретро-настроение. Подходит для мужчин и женщин.</p>
+          </div>
+          <!-- /.table__body-seller -->
+          <div class="table__body-other table__body-item" data-table-tab="3">
+            <a href="https://ru.puma.com/sportivnye-tovary-dlja-muzhchin/aksessuary/rukzaki.html" class="table__body-link"> Официальный сайт Puma (Россия)</a>
+            <a href="https://ua.puma.com/sportivnye-tovary-dlja-muzhchin/aksessuary/rukzaki.html" class="table__body-link">Официальный сайт Puma (Украина)</a>
+          </div>
+          <!-- /.table__body-other -->
+        </div>
+        <!-- /.table__body -->
+      </div>
+      <!-- /.table table__container col-75-1 -->
+      <!-- <div class="product-description__table"></div> -->
+      <!-- /.product-description__table table -->
+      <div class="product-description__viewed viewed col-25">
+        <div class="viewed__container">
+          <div class="viewed__title">Недавно просмотренное</div>          
+          <!-- /.viewed__title -->
+          <div class="viewed__card">
+            <div class="viewed__image">
+              <img src="./img/product/jacket-small.png" alt="Пуховик">
+            </div>
+            <!-- /.viewed__image -->
+            <div class="viewed__description-container">
+              <h4 class="viewed__description-heading">Пуховик артикул: 2801</h4>
+              <span class="viewed__description-category">Пуховики</span>
+              <span class="viewed__description-rating">
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+              </span>
+              <strong class="viewed__description-price">
+                <span class="viewed__description-word">21 200.00</span> тг.
+              </strong>
+            </div>
+            <!-- /.viewed__description-container -->
+          </div>
+          <!-- /.viewed__card -->
+          <div class="viewed__card">
+            <div class="viewed__image">
+              <img src="./img/product/blouse-small.png" alt="Блузка">
+            </div>
+            <!-- /.viewed__image -->
+            <div class="viewed__description-container">
+              <h4 class="viewed__description-heading">Блузка модель 111</h4>
+              <span class="viewed__description-category">Женская одежда</span>
+              <span class="viewed__description-rating">
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+              </span>
+              <strong class="viewed__description-price">
+                <span class="viewed__description-word">3 000.00</span> тг.
+              </strong>
+            </div>
+            <!-- /.viewed__description-container -->
+          </div>
+          <!-- /.viewed__card -->
+          <div class="viewed__card">
+            <div class="viewed__image">
+              <img src="./img/product/snickers-small.png" alt="Кросовки">
+            </div>
+            <!-- /.viewed__image -->
+            <div class="viewed__description-container">
+              <h4 class="viewed__description-heading">Обувь Т 452</h4>
+              <span class="viewed__description-category">Женская обувь</span>
+              <span class="viewed__description-rating">
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+                <i class="far fa-star data__rating-star viewed__description-icon secondary"></i>
+              </span>
+              <strong class="viewed__description-price">
+                <span class="viewed__description-word">12 555.00</span> тг.
+              </strong>
+            </div>
+            <!-- /.viewed__description-container -->
+          </div>
+          <!-- /.viewed__card -->
+        </div>
+        <!-- /.viewed__container col-25 -->
+      </div>
+      <!-- /.product-description__viewed viewed -->
+    </div>
     <!-- /.product-description__wrapper -->
 
 

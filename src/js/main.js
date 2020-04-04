@@ -264,6 +264,19 @@ $(document).ready(function(){
     $(this).addClass('tab-content--active');
   });
 
+  // Описание товара в секции Product
+  let tableHeaderItem = $('.table__header-item');
+  let tableBodyItem =$('.table__body-item');
+  console.log(tableHeaderItem);
+  console.log(tableBodyItem);
+  tableHeaderItem.click( function (){
+    tableHeaderItem.removeClass('table__header-item--active');
+    tableBodyItem.removeClass('table__body-item--active');
+    $('.table__body-item[data-table-tab='+$(this).attr('data-table-tab')+']')
+    .addClass('table__body-item--active');
+    $(this).addClass('table__header-item--active');
+  });
+
 
 
 

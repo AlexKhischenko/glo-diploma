@@ -1,5 +1,6 @@
 .approved
-  padding: 29px 0
+  padding: 10px 0
+  margin: 15px 0
   &__title
     position: relative
     max-width: 51.5rem
@@ -44,31 +45,35 @@
       font-size: 1.285rem
   &__container
     margin-top: 2.1rem
+    margin-bottom: 0.5rem
 .product
   &-section
     display: flex
     justify-content: space-between
     &__card
+      position: relative
       display: flex
-      margin-left: 0.5rem
+      margin-left: 0
       margin-right: 0.5rem
-      height: 250px
+      min-height: 17.857rem
       max-width: 31rem
       width: 100%
       background-color: #f6f6f6
       text-align: right
+      overflow-x: hidden
     &__image
-      display: table-cell
-      width: 45%
-      text-align: right
-      vertical-align: middle
+      // display: table-cell
+      // text-align: right
+      // vertical-align: middle
       margin-top: auto
-    &__img img
-      display: inline-block
-      vertical-align: bottom
+    &__image img
+      object-fit: cover
+      // display: inline-block
+      // vertical-align: bottom
     &__data
-      width: 55%
-      padding-right: 48px
+      position: absolute
+      right: 0
+      padding-right: 3.428rem
     &__category
       display: inline-block
       margin-top: 3.4rem
