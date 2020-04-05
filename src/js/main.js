@@ -8,6 +8,33 @@ $(document).ready(function(){
   //   };
   // });
 
+  //Drop down menu
+  let dropDown = $('.dropdown');
+  let dropDownList = $('.dropdown__list');
+  dropDown.click( function(event) {
+    event.preventDefault();
+    dropDownList.toggleClass('dropdown__list--active');
+  });
+  $(document).mouseup( function(e) {
+    if (!dropDown.is(e.target) && !dropDownList.is(e.target) && dropDownList.has(e.target).length === 0) {
+      dropDownList.removeClass('dropdown__list--active');
+    };
+  });
+
+  //Drop down mobile-menu
+  let dropDownMobile = $('.dropdown-mobile');
+  let dropDownMobileList = $('.dropdown-mobile__list');
+  dropDownMobile.click( function(event) {
+    dropDownMobile.toggleClass('dropdown-mobile--active');
+    dropDownMobileList.toggleClass('dropdown-mobile__list--active');
+  });
+  $(document).mouseup( function(e) {
+    if (dropDownMobile.has(e.target).length === 0) {
+      dropDownMobile.removeClass('dropdown-mobile--active');
+      dropDownMobileList.removeClass('dropdown-mobile__list--active');
+    };
+  });
+
   //Инициализация слайдера секции Hero
   var heroSwiper = new Swiper('.hero__swiper-container', {
     spaceBetween: 30,
@@ -186,15 +213,15 @@ $(document).ready(function(){
   });
   
   // Mobile submenu
-  let mobileSubMenuBtn = $('.mobile-submenu__btn');
-  let submobile = $('.submobile');
-  let closeSubMobileMenu = $('.mobile-submenu__close-btn');
-  mobileSubMenuBtn.click( function() {
-		submobile.toggleClass('mobile-submenu__active');
-  });
-  closeSubMobileMenu.click(function() {
-		submobile.toggleClass('mobile-submenu__active');
-  });
+  // let mobileSubMenuBtn = $('.mobile-submenu__btn');
+  // let submobile = $('.submobile');
+  // let closeSubMobileMenu = $('.mobile-submenu__close-btn');
+  // mobileSubMenuBtn.click( function() {
+	// 	submobile.toggleClass('mobile-submenu__active');
+  // });
+  // closeSubMobileMenu.click(function() {
+	// 	submobile.toggleClass('mobile-submenu__active');
+  // });
   
   // Закрытие мобильного меню кликом на пустой области
   menu.click( function(e) {
@@ -397,48 +424,29 @@ $(document).ready(function(){
     }
   });
   
-  function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }  
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-  
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-  
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-  
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
-    }
-  
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-  
-  var deadline = new Date(Date.parse(new Date()) + 5 * 24 * 60 * 60 * 1000);
-  initializeClock('clockdiv', deadline);
+  // Таймер на сайте
+  const second = 1000,
+  minute = second * 60,
+  hour = minute * 60,
+  day = hour * 24;
+  let countDown = new Date('Apr 10, 2020 00:00:00').getTime(),
+  x = setInterval(function() {    
+  let now = new Date().getTime(),
+      distance = countDown - now;
+  document.getElementById('days').innerText = Math.floor(distance / (day)),
+    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+  }, second)
 
 
+  $(document).mouseup(e => {
+    if (!$menu.is(e.target) // if the target of the click isn't the container...
+    && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      $menu.removeClass('is-active');
+   }
+  });
 
   // $(function(){
   //   var $button    = $('.js-button'),

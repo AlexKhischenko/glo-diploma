@@ -10,20 +10,7 @@
     <title>Diploma</title>
   </head>
   <body>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-  ym(61639852, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/61639852" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter --> 
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61639852, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61639852" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     <header class="header header-bgm">
       <div class="container">
@@ -63,7 +50,16 @@
           </ul>
           <ul class="mobile-submenu">
             <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Объявления</a></li>
-            <li class="mobile-menu__item"><a href="./catalog.html" class="mobile-menu__text">Каталоги</a></li>
+            <li class="mobile-menu__item dropdown-mobile">
+              <a href="#" class="mobile-menu__text">Каталоги</a>
+              <ul class="dropdown-mobile__list">
+                <li class="dropdown-mobile__item"><a href="./catalog.html" class="dropdown-mobile__link">Оптика</a></li>
+                <li class="dropdown-mobile__item"><a href="./catalog.html" class="dropdown-mobile__link">Мебель</a></li>
+                <li class="dropdown-mobile__item"><a href="./catalog.html" class="dropdown-mobile__link">Инструменты</a></li>
+                <li class="dropdown-mobile__item"><a href="./catalog.html" class="dropdown-mobile__link">Дача и сад</a></li>
+                <li class="dropdown-mobile__item"><a href="./catalog.html" class="dropdown-mobile__link">Авто</a></li>
+              </ul>
+            </li>
             <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Участники</a></li>
             <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">Партнеры</a></li>
             <li class="mobile-menu__item"><a href="#" class="mobile-menu__text">О платформе</a></li>
@@ -131,7 +127,16 @@
           <!-- /.logo subnav__logo -->
           <ul class="submenu subnav__submenu">
             <li class="submenu__item"><a href="#" class="submenu__text">Объявления</a></li>
-            <li class="submenu__item"><a href="./catalog.html" class="submenu__text">Каталоги <i class="fas fa-angle-down submenu__icon"></i></a></li>
+            <li class="submenu__item">
+              <a href="#" class="submenu__text dropdown">Каталоги <i class="fas fa-angle-down submenu__icon"></i></a>
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><a href="./catalog.html" class="dropdown__link">Оптика</a></li>
+                <li class="dropdown__item"><a href="./catalog.html" class="dropdown__link">Мебель</a></li>
+                <li class="dropdown__item"><a href="./catalog.html" class="dropdown__link">Инструменты</a></li>
+                <li class="dropdown__item"><a href="./catalog.html" class="dropdown__link">Дача и сад</a></li>
+                <li class="dropdown__item"><a href="./catalog.html" class="dropdown__link">Авто</a></li>
+              </ul>
+            </li>
             <li class="submenu__item"><a href="#" class="submenu__text">Участники</a></li>
             <li class="submenu__item"><a href="#" class="submenu__text">Партнеры</a></li>
             <li class="submenu__item"><a href="#" class="submenu__text">О платформе</a></li>
@@ -161,9 +166,11 @@
           </div>
           <!-- /.counter subnav__counter -->
         </nav>
+        
       </div>
       <!-- /.container -->
     </header>
+
     <section class="section hero">
       <div class="container">
         <div class="hero__swiper-container swiper-container">
@@ -425,7 +432,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Дней</span>
-                <strong class="timer__number orange days"></strong>
+                <strong class="timer__number orange" id="days"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -434,7 +441,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Часов</span>
-                <strong class="timer__number orange hours"></strong>
+                <strong class="timer__number orange" id="hours"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -443,7 +450,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Минут</span>
-                <strong class="timer__number orange minutes"></strong>
+                <strong class="timer__number orange" id="minutes"></strong>
               </div>
             </div>
             <div class="timer__space">
@@ -452,7 +459,7 @@
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
                 <span class="timer__space-title">Секунд</span>
-                <strong class="timer__number orange seconds"></strong>
+                <strong class="timer__number orange" id="seconds"></strong>
               </div>
             </div>
           </div>
