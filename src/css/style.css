@@ -2402,6 +2402,7 @@ button {
   letter-spacing: 0.15px; }
 
 .viewed__card {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2410,6 +2411,12 @@ button {
   border-bottom: 1px solid #d7d7d7; }
   .viewed__card:last-child {
     border-bottom: none; }
+  .viewed__card-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
 
 .viewed__image {
   width: 6.4rem;
@@ -2592,8 +2599,24 @@ button {
       margin-right: 1.7rem;
       color: #919191;
       font-size: 1.285rem; }
+  .category__button {
+    display: block;
+    max-width: 15rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid #d7d7d7;
+    font-family: 'DIN Pro Medium', sans-serif;
+    font-size: 1.142rem;
+    text-align: center;
+    display: none; }
   .category-list {
     margin-top: 2rem; }
+    .category-list--visible {
+      margin-bottom: 2rem;
+      display: block !important;
+      text-align: center; }
     .category-list__item {
       margin-bottom: 1.30rem;
       font-family: 'DIN Pro Medium', sans-serif;
@@ -3615,9 +3638,9 @@ button {
 
 @media screen and (max-width: 759px) {
   .col-75 {
-    widows: 50%; }
+    width: 100%; }
   .col-25-1 {
-    width: 50%; }
+    width: 100%; }
   .col-25-2 {
     width: 100%; }
   .service-btn {
@@ -3703,20 +3726,56 @@ button {
     justify-content: flex-start; }
   .subheader-menu__container {
     margin-bottom: 1.5rem; }
-  .filter-number__select {
-    width: 20rem; }
-  .filter-number__icon {
-    left: 18rem; }
-  .filter-sort__select {
-    width: 20rem; }
-  .filter-sort__icon {
-    left: 18rem; }
+  .filter {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .filter-number__select {
+      width: 20rem; }
+    .filter-number__icon {
+      left: 18rem; }
+    .filter-sort__select {
+      width: 20rem; }
+    .filter-sort__icon {
+      left: 18rem; }
   .input-group {
     margin-bottom: 1.5rem;
     margin-left: 0;
     margin-right: 2rem; }
-  .category__title::after {
-    width: 80%; }
+  .category__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .category__title {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'DIN Pro Medium', sans-serif;
+    font-weight: normal;
+    font-size: 2rem; }
+    .category__title::after {
+      width: 100%; }
+  .category__list {
+    padding-top: 0.5rem;
+    margin-top: 2rem; }
+  .category__item {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .category-list {
+    display: none; }
+    .category-list__item {
+      width: 50%;
+      margin: 1rem auto 0.5rem auto;
+      border-bottom: 1px solid #d7d7d7; }
+  .category__button {
+    display: block; }
+  .category__view {
+    margin-top: 3rem; }
   .pages__number {
     width: 2.5rem;
     height: 2.5rem; }
@@ -3975,38 +4034,9 @@ button {
       left: 95%; }
   .input-group {
     margin-right: 0; }
-  .category__view {
-    margin: auto; }
-  .category__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .category__title {
-    text-align: center; }
-    .category__title::after {
-      width: 100%; }
-  .category__item {
-    text-align: center; }
-  .category-list {
-    text-align: center; }
-    .category-list__item {
-      position: relative;
-      padding: 0.5rem 0; }
-      .category-list__item::after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        width: 280px;
-        background-color: #d0d0d0;
-        bottom: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); }
-      .category-list__item-link:hover {
-        color: #202020;
-        text-decoration: none; }
+  .category-list__item-link:hover {
+    color: #202020;
+    text-decoration: none; }
   .data__header {
     font-size: 1.3rem; }
   .data__title {

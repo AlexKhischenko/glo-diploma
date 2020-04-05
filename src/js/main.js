@@ -20,7 +20,7 @@ $(document).ready(function(){
       dropDownList.removeClass('dropdown__list--active');
     };
   });
-  console.log('click');
+  
   //Drop down mobile-menu
   let dropDownMobile = $('.dropdown-mobile');
   let dropDownMobileList = $('.dropdown-mobile__list');
@@ -332,6 +332,14 @@ $(document).ready(function(){
     if (modal.is(e.target) && modal.has(e.target).length === 0) {
       resetModalFormInputs();
     };
+  });
+
+  //Развернуть все категроии товаров
+  let categoryButton = $('.category__button');
+  let categoryList = $('.category-list');  
+  categoryButton.click( function() {
+    event.preventDefault();
+    categoryList.toggleClass('category-list--visible');
   });
 
   // Маска для номера телефона модального окна

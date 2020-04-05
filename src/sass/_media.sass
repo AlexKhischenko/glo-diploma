@@ -483,9 +483,9 @@
 @media screen and ( max-width: 759px )
   //SETTINGS
   .col-75
-      widows: 50%
+    width: 100%
   .col-25-1
-    width: 50%
+    width: 100%
   .col-25-2
     width: 100%
   .service
@@ -568,6 +568,7 @@
       &__container
         margin-bottom: 1.5rem
   .filter
+    justify-content: center
     &-number
       &__select
         width: 20rem
@@ -585,9 +586,35 @@
       margin-right: 2rem
   //CATEGORY
   .category
+    &__wrapper
+      flex-direction: column
     &__title
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      font-family: 'DIN Pro Medium', sans-serif
+      font-weight: normal
+      font-size: 2rem
       &::after
-        width: 80%
+        width: 100%
+    &__list
+      padding-top: 0.5rem
+      margin-top: 2rem
+    &__item
+      width: 50%
+      margin-left: auto
+      margin-right: auto
+    &-list
+      display: none
+      &__item
+        width: 50%
+        margin: 1rem auto 0.5rem auto
+        border-bottom: 1px solid #d7d7d7
+    &__button
+      display: block
+    &__view
+      margin-top: 3rem
   .pages
     &__number
       width: 2.5rem
@@ -820,30 +847,8 @@
       margin-right: 0
   //CATEGORY
   .category
-    &__view
-      margin: auto
-    &__wrapper
-      flex-direction: column
-    &__title
-      text-align: center
-      &::after
-        width: 100%
-    &__item
-      text-align: center
     &-list
-      text-align: center
       &__item
-        position: relative
-        padding: 0.5rem 0
-        &::after
-          content: ''
-          position: absolute
-          height: 1px
-          width: 280px
-          background-color: $gray
-          bottom: 0
-          left: 50%
-          transform: translateX(-50%)
         &-link
           &:hover
             color: $primary
