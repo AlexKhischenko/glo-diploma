@@ -1001,13 +1001,20 @@ button {
     top: 0;
     margin-top: 1.05rem;
     text-align: center; }
+    .counter__container:hover .counter__icon {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2); }
   .counter__icon {
     display: block;
-    font-size: 1.428rem; }
+    font-size: 1.428rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
   .counter__number {
     display: block;
     font-size: 1.142rem;
-    line-height: 2.6rem; }
+    line-height: 2.6rem;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
 
 .dropdown {
   position: relative;

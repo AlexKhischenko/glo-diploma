@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
   // Lazy load для картинок
-  // [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-  //   img.setAttribute('src', img.getAttribute('data-src'));
-  //   img.onload = function() {
-  //   img.removeAttribute('data-src');
-  //   };
-  // });
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+    img.removeAttribute('data-src');
+    };
+  });
 
   //Drop down menu
   let dropDown = $('.dropdown');
@@ -423,5 +423,4 @@ $(document).ready(function(){
     document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
     document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
   }, second)
-
 });
