@@ -20,7 +20,7 @@ $(document).ready(function(){
       dropDownList.removeClass('dropdown__list--active');
     };
   });
-
+  console.log('click');
   //Drop down mobile-menu
   let dropDownMobile = $('.dropdown-mobile');
   let dropDownMobileList = $('.dropdown-mobile__list');
@@ -74,7 +74,7 @@ $(document).ready(function(){
       $('.hero-swiper__control-right').removeClass('hero-swiper__active');
     } 
   });
-
+  
   // Инициализация слайдера многостраничного
   var wideSwiper = new Swiper('.services__swiper-container', {
     slidesPerView: 4,
@@ -137,7 +137,7 @@ $(document).ready(function(){
       $('.wide-swiper__control-right').removeClass('wide-swiper__active');
     } 
   });
-
+  
   // Инициализация слайдера многостраничного секции LikeMore
   var likeMoreSwiper = new Swiper('.likemore__swiper-container', {
     slidesPerView: 4,
@@ -212,23 +212,13 @@ $(document).ready(function(){
 		menu.toggleClass('mobile-menu__active');
   });
   
-  // Mobile submenu
-  // let mobileSubMenuBtn = $('.mobile-submenu__btn');
-  // let submobile = $('.submobile');
-  // let closeSubMobileMenu = $('.mobile-submenu__close-btn');
-  // mobileSubMenuBtn.click( function() {
-	// 	submobile.toggleClass('mobile-submenu__active');
-  // });
-  // closeSubMobileMenu.click(function() {
-	// 	submobile.toggleClass('mobile-submenu__active');
-  // });
-  
   // Закрытие мобильного меню кликом на пустой области
   menu.click( function(e) {
     if (menu.is(e.target) && menu.has(e.target).length === 0) {
       menu.removeClass('mobile-menu__active');
     };
   });
+
   // Закрытие мобильного меню клавишей Esc
   $(document).keydown( function(event) {
     if (menu.hasClass('mobile-menu__active')) {
@@ -237,26 +227,13 @@ $(document).ready(function(){
       };
     };
   });
-  // Закрытие мобильного меню кликом на пустой области
-  submobile.click( function(e) {
-    if (submobile.is(e.target) && submobile.has(e.target).length === 0) {
-      submobile.removeClass('mobile-submenu__active');
-    };
-  });
-  // Закрытие мобильного меню клавишей Esc
-  $(document).keydown( function(event) {
-    if (submobile.hasClass('mobile-submenu__active')) {
-      if (event.which == 27) {
-        submobile.removeClass('mobile-submenu__active');
-      };
-    };
-  });
+   
   // Разворачивание категорий в секции Categories
-  let categoriesBtn = $('.categories__btn');
-  let categoriesItem = $('.test');  
-  categoriesBtn.click( function (event) {
+  let categoriesBtn = $('.btn-more');
+  let categoriesItem = $('.categories__item--hidden');
+  categoriesBtn.click( function (event) {    
     event.preventDefault();
-    $('.test').toggleClass('categories__item-hidden');   
+    categoriesItem.toggleClass('categories__item--visible');   
   });
 
   // Смена картинки в секции Product
@@ -438,28 +415,5 @@ $(document).ready(function(){
     document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
     document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
   }, second)
-
-
-  $(document).mouseup(e => {
-    if (!$menu.is(e.target) // if the target of the click isn't the container...
-    && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-      $menu.removeClass('is-active');
-   }
-  });
-
-  // $(function(){
-  //   var $button    = $('.js-button'),
-  //       $container = $('.js-container');
-    
-  //   $button.on('click', function(){
-  //     var toggleText = $(this).data('toggle-text');
-      
-  //     $(this).data('toggle-text', $(this).text())
-  //            .text(toggleText);
-      
-  //     $container.toggleClass('hidden');
-  //   });
-  // });
 
 });

@@ -10,7 +10,7 @@
     <title>Diploma</title>
   </head>
   <body>
-<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61639852, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61639852" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(61639852, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61639852" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     <header class="header header-bgm">
       <div class="container">
@@ -149,18 +149,18 @@
           <div class="counter subnav__counter">
             <div class="counter__like">
               <img src="./img/header/flag-t.png" alt="Flag">
-              <div class="counter__container">
+              <a href="#" class="counter__container">
                 <i class="far fa-heart counter__icon orange"></i>
                 <span class="counter__number orange">2</span>
-              </div>              
+              </a>              
             </div>
             <!-- /.counter__like -->
             <div class="counter__sale">
               <img src="./img/header/flag-o.png" alt="Flag">
-              <div class="counter__container">
+              <a href="#" class="counter__container">
                 <i class="fas fa-shopping-bag counter__icon light"></i>
                 <span class="counter__number light">0</span>
-              </div> 
+              </a> 
             </div>
             <!-- /.counter__sale -->          
           </div>
@@ -254,7 +254,7 @@
     <!-- /.section hero -->
     <section class="section approved">
       <div class="container">
-        <h2 class="approved__title"><a href="./productcard.html"><span class="approved__title-word">УТВЕРЖДЕННАЯ ФОРМА</span> ДЛЯ ШКОЛ Г.НУРСУЛТАН<i class="fas fa-angle-right approved__title-icon"></i></a></h2>
+        <div class="line-wrapper"><h2 class="approved__title"><a href="./productcard.html"><span class="approved__title-word">УТВЕРЖДЕННАЯ ФОРМА</span> ДЛЯ ШКОЛ Г.НУРСУЛТАН<i class="fas fa-angle-right approved__title-icon"></i></a></h2></div>
         <div class="approved__container product-section">
           <div class="col-30 product-section__card">
             <div class="product-section__image">
@@ -301,26 +301,24 @@
     <div class="section categories">
       <div class="container">
         <div class="categories__wrapper">
-          <h2 class="categories__title section__title">Категории товаров</h2>
+          <div class="line-wrapper"><h2 class="categories__title section__title">Категории товаров</h2></div>
           <div class="categories__variety">
             <a href="./catalog.html" class="col-25 categories__item"><i class="categories__icon fas fa-table-tennis"></i>Развлечения, досуг</a>
             <a href="./catalog.html" class="col-25 categories__item"><i class="categories__icon fas fa-wine-glass-alt"></i>Посуда и зеркала</a>
             <a href="./catalog.html" class="col-25 categories__item"><i class="categories__icon fas fa-spray-can"></i>Парфюмерия и косметика</a>
             <a href="./catalog.html" class="col-25 categories__item"><i class="categories__icon fas fa-keyboard"></i>Компьютерная техника</a>
 
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-couch"></i>Мебель</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-glasses"></i>Оптика</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-lightbulb"></i>Источники света</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-tools"></i>Инструменты</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-heartbeat"></i>Здоровье</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-car"></i>Авто</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-mobile-alt"></i>Мобильные телефоны</a>
-            <a href="./catalog.html" class="col-25 categories__item categories__item-hidden test" data-hidden="1"><i class="categories__icon fas fa-book"></i>Книги</a>
-          
-          
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-couch"></i>Мебель</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-glasses"></i>Оптика</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-lightbulb"></i>Источники света</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-tools"></i>Инструменты</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-heartbeat"></i>Здоровье</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-car"></i>Авто</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-mobile-alt"></i>Мобильные телефоны</a>
+            <a href="./catalog.html" class="col-25 categories__item categories__item--hidden" ><i class="categories__icon fas fa-book"></i>Книги</a>
           </div>
           <!-- /.categories__variety -->
-          <div class="categories__btn" data-toggle-text="Скрыть"><a href="./catalog.html" class="btn btn-more">Ещё<i class="btn-more__icon fas fa-angle-down"></i></a></div>
+          <div class="categories__btn" ><a href="#" class="btn btn-more">Ещё<i class="btn-more__icon fas fa-angle-down"></i></a></div>
         </div>
       </div>
       <!-- /.container -->
@@ -329,7 +327,7 @@
     <section class="section popular">
       <div class="container">
         <div class="popular__wrapper">
-          <h2 class="popular__title section__title">Популярные товары</h2>
+          <div class="line-wrapper"><h2 class="popular__title section__title">Популярные товары</h2></div>
           <div class="popular__container">
             <div class="col-25 popular-card ">
               <div class="popular-card__image-container">
@@ -427,7 +425,7 @@
     <section class="section timer">
       <div class="container">
         <div class="timer__wraapper">
-          <h2 class="timer__title section__title">До конца скидок осталось</h2>
+          <div class="line-wrapper"><h2 class="timer__title section__title">До конца скидок осталось</h2></div>
           <div class="timer__container" id="clockdiv">
             <div class="timer__first-wrap">
               <div class="timer__second-wrap">
@@ -473,7 +471,7 @@
     <section class="section discount">
       <div class="container">
         <div class="discount__wrapper">
-          <h2 class="discount__title section__title">Товары со скидкой</h2>
+          <div class="line-wrapper"><h2 class="discount__title section__title">Товары со скидкой</h2></div>
           <div class="discount__container">
             <div class="col-25 discount-card ">
               <div class="discount-card__image-container">
@@ -626,7 +624,7 @@
     <section class="section services">
       <div class="container">
         <div class="services__wrapper">
-          <h2 class="services__title section__title">Сервисы платформы</h2>
+          <div class="line-wrapper"><h2 class="services__title section__title">Сервисы платформы</h2></div>
           <div class="services__swiper-container swiper-container">
             <div class="swiper-wrapper wide-swiper">
               <div class="swiper-slide wide-swiper__slide">

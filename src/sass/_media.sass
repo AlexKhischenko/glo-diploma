@@ -133,6 +133,26 @@
       font-weight: normal
       font-size: 2rem
       letter-spacing: normal
+  .btn
+    &:hover
+      color: $primary
+      border: 2px solid $primary
+  .add-cart
+    &:hover
+      border-color: $orange
+      color: $light
+    &:hover .add-cart__icon
+      color: $light
+  .favorites
+    &:hover
+      border-color: $primary
+      color: $primary
+    &:hover .favorites__icon
+      color: $primary
+  .offers
+    &:hover
+      border-color: $primary
+      color: $primary
   //HEADER
   .header
     &-bgm
@@ -152,6 +172,12 @@
   .submenu
     &__item
       margin-right: 1rem
+      &:hover
+        &::after
+          display: none
+    &__text
+      &:hover
+        color: $primary
   .counter
     display: none
   //HERO
@@ -176,9 +202,19 @@
         &::before, &::after
           display: none
       &__image
+        position: relative
         order: -1
         width: 100%
         text-align: center
+        &::after
+          content: ''
+          position: absolute
+          height: 1px
+          width: 60%
+          left: 50%
+          bottom: 2px
+          background-color: #d7d7d7
+          transform: translateX(-50%)          
       &__pic
         height: 300px
       &__description
@@ -193,6 +229,8 @@
           width: 100%
       &__button
         margin-bottom: 2rem
+        &:hover
+          color: $light
       &__control
         width: 100%
         bottom: 50%
@@ -203,6 +241,8 @@
           font-size: 1.2rem
       &__social
         top: 2rem
+        &-icon
+          color: $primary
   //APPROVED
   .approved
     &__title
@@ -235,6 +275,10 @@
     &__variety
       flex-wrap: wrap
       justify-content: space-around
+    &__item
+      &:hover
+        background-color: #f6f6f6
+        color: $primary
   //POPULAR
   .popular
     margin-top: 6rem
@@ -252,6 +296,8 @@
       &__pricetag
         &-word
           font-size: 1.8rem
+        &-icon
+          color: $primary
     &__btn
       margin-top: 0
   //TIMER
@@ -293,8 +339,13 @@
       &__pricetag
         &-word
           font-size: 1.8rem
+        &-icon
+          color: $primary
     &__btn
       margin-top: 0
+  //ADV
+  .adv
+    display: none
   //SERVICES
   .services
     margin-top: 4rem
@@ -308,6 +359,9 @@
       flex-wrap: wrap
   .info
     margin-bottom: 2rem
+  .social
+    &__icon
+      color: $primary
   .mobile
     margin-bottom: 2rem
     &__apps
@@ -316,14 +370,27 @@
     &__list
       &-item
         line-height: 1.5rem
+        &:hover
+          font-family: 'DIN Pro Regular', sans-serif
+          color: $secondary
   .contacts
     align-items: flex-start
     text-align: left
     margin-bottom: 2rem
+    &__phone
+      &:hover
+        color: $primary
+    &__email
+      &:hover
+        color: $secondary
     &__banks
       margin-top: 2rem
   .logo-black
     margin-bottom: 1rem
+  .copyright
+    &__error
+      &:hover
+        color: $secondary
   //CATEGORY
   .category
     &-card
@@ -331,8 +398,22 @@
       &__pricetag
         &-word
           font-size: 1.8rem
+        &-icon
+          color: $primary
     &__pages
       margin-left: 0
+    &__item
+      &:hover
+        color: $primary
+        background-color: #f6f6f6
+      &:hover .category__item-link
+        color: $secondary
+    &-list
+      &__item
+        &-link
+          &:hover
+            color: $primary
+            text-decoration: none
   .pages
     &__container
       margin-bottom: 1rem
@@ -373,7 +454,10 @@
   .tab
     &-content
       &__label
-        margin-right: 0 
+        margin-right: 0
+  .share  
+    &__icon
+      color: $primary
   .table
     &__container
       max-width: 100%
@@ -795,7 +879,6 @@
         top: 1.8rem
       &__link
         font-size: 0.9rem
-
   //MODAL
   .modal
     &__dialog
@@ -810,4 +893,3 @@
       margin-bottom: 2rem
     &__button
       padding: 0.8rem 0
-  
