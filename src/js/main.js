@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  if (typeof NodeList.prototype.forEach !== 'function')  {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+  }
+
   // Lazy load для картинок
   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
     img.setAttribute('src', img.getAttribute('data-src'));

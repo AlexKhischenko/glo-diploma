@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'DIN Pro Regular';
-  src: url("../fonts/DINPro/DINPro.woff") format("woff"), url("../fonts/DINPro/DINPro.woff2") format("woff");
+  src: url("../fonts/DINPro/DINPro.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'DIN Pro Light';
-  src: url("../fonts/DINPro/DINPro-Light.woff") format("woff"), url("../fonts/DINPro/DINPro-Light.woff2") format("woff");
+  src: url("../fonts/DINPro/DINPro-Light.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'DIN Pro Medium';
-  src: url("../fonts/DINPro/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro/DINPro-Medium.woff2") format("woff");
+  src: url("../fonts/DINPro/DINPro-Medium.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'DIN Pro Bold';
-  src: url("../fonts/DINPro/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro/DINPro-Bold.woff2") format("woff");
+  src: url("../fonts/DINPro/DINPro-Bold.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
@@ -369,6 +369,7 @@ div.invalid {
   color: primary;
   padding: 0.9rem 2.2rem;
   font-size: 1rem;
+  font-family: 'DIN Pro Medium', sans-serif;
   font-weight: 500;
   letter-spacing: 0.14px;
   border: 2px solid #202020;
@@ -688,6 +689,44 @@ div.invalid {
   .offers:hover {
     border-color: #f47920;
     color: #f47920; }
+
+.scrollup {
+  position: fixed;
+  display: visible;
+  opacity: 0;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+  .scrollup--visible {
+    display: visible;
+    opacity: 1; }
+  .scrollup__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #202020;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    .scrollup__content:hover {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(32, 32, 32, 0.2); }
 
 .container {
   max-width: 1406px;
@@ -3325,7 +3364,7 @@ button {
   .subnav__logo {
     margin-bottom: 0.5rem; }
   .submenu__item {
-    margin-right: 1rem; }
+    margin-right: 0.9rem; }
     .submenu__item:hover::after {
       display: none; }
   .submenu__text:hover {
