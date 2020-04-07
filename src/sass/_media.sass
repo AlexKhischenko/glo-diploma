@@ -53,8 +53,8 @@
       &__element
         margin: 0 0.4rem
 @media screen and ( max-width: 1300px )
-  //ADV
-  .adv
+  //NADV
+  .nadv
     &__title
       font-size: 4rem
       max-width: 50rem
@@ -95,7 +95,7 @@
     &__icon
       left: 1rem
   //ADV
-  .adv
+  .nadv
     &__title
       font-size: 3.3rem
       max-width: 45rem
@@ -342,8 +342,8 @@
           color: $primary
     &__btn
       margin-top: 0
-  //ADV
-  .adv
+  //NADV
+  .nadv
     display: none
   //SERVICES
   .services
@@ -538,8 +538,8 @@
         font-size: 1.5rem
     &__number
       font-size: 3rem
-  //ADV
-  .adv
+  //NADV
+  .nadv
     &__wrapper
       display: flex
       flex-direction: column
@@ -655,7 +655,8 @@
     &__feature
       padding: 1rem 0.8rem
     &__seller
-      padding: 1.6rem 0.8rem
+      margin-left: 0
+      padding: 1rem 0.8rem
     &__other
       padding: 1rem 0.8rem
     &__header
@@ -751,14 +752,17 @@
   .discount
     &-card
       margin-right: 0
-  //ADV
-  .adv
+  //NADV
+  .nadv
     &__title
       max-width: 25rem
       font-size: 2rem
     &__subtitle
       font-size: 1.5rem
-  //SERVICES  
+  //SERVICES
+  .services
+    margin-top: 3rem
+    margin-bottom: 2rem
   .wide
     &-swiper
       padding-bottom: 6rem
@@ -867,6 +871,19 @@
         display: none
       &-word2
         font-size: 2rem
+  .table
+    &__feature
+      padding: 1rem 0.8rem 
+    &__seller
+      margin-left: 0
+      padding: 1rem 0.8rem
+    &__other
+      padding: 1rem 0.8rem
+@media screen and ( max-width: 480px )
+  .table
+    &__seller
+      margin-left: 0
+      padding: 1.6rem 0.8rem
 @media screen and ( max-height: 500px )
   //SETTINGS
   .mobile

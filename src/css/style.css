@@ -598,7 +598,8 @@ div.invalid {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background-color: transparent; }
+      background-color: transparent;
+      cursor: pointer; }
     .filter-number__option {
       margin-left: 0.5rem; }
       .filter-number__option:hover {
@@ -620,7 +621,8 @@ div.invalid {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background-color: transparent; }
+      background-color: transparent;
+      cursor: pointer; }
     .filter-sort__icon {
       position: absolute;
       right: 20px;
@@ -692,12 +694,11 @@ div.invalid {
 
 .scrollup {
   position: fixed;
-  display: visible;
+  display: hidden;
   opacity: 0;
   right: 20px;
   bottom: 20px;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
+  z-index: 110; }
   .scrollup--visible {
     display: visible;
     opacity: 1; }
@@ -717,16 +718,20 @@ div.invalid {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: #202020;
+    background-color: #F6F6F6;
+    box-shadow: 0px 0px 5px 0px rgba(32, 32, 32, 0.3);
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
     .scrollup__content:hover {
-      -webkit-transform: scale(1.05);
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(32, 32, 32, 0.2); }
+      -webkit-transform: scale(1.05) rotate(180deg);
+      transform: scale(1.05) rotate(180deg);
+      box-shadow: 0px 0px 5px 0px rgba(32, 32, 32, 0.75); }
+  .scrollup__icon {
+    font-size: 1rem;
+    font-weight: normal; }
 
 .container {
   max-width: 1406px;
@@ -1039,7 +1044,8 @@ button {
     transform: translateX(-50%);
     top: 0;
     margin-top: 1.05rem;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
     .counter__container:hover .counter__icon {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
@@ -1819,16 +1825,16 @@ button {
   font-weight: normal;
   text-decoration: line-through; }
 
-.adv {
+.nadv {
   margin-top: 7.1rem;
   margin-bottom: 6.5rem;
   background-color: #f47920;
   min-height: 471px;
-  background-image: url("../img/adv/bg.png");
+  background-image: url("../img/nadv/bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
-  .adv__wrapper {
+  .nadv__wrapper {
     position: relative;
     width: 100%;
     min-height: 471px;
@@ -1836,34 +1842,34 @@ button {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .adv__title {
+  .nadv__title {
     margin-top: 5.9rem;
     margin-bottom: 1rem;
     font-family: 'DIN Pro Bold', sans-serif;
     font-size: 5.142rem;
     font-weight: 700;
     text-transform: uppercase; }
-  .adv__subtitle {
+  .nadv__subtitle {
     display: block;
     margin-bottom: 2.85rem;
     font-family: 'DIN Pro Light', sans-serif;
     font-size: 2.142rem;
     font-weight: 400; }
-  .adv__image {
+  .nadv__image {
     position: absolute;
     bottom: 0;
     right: 6rem; }
-  .adv__btn {
+  .nadv__btn {
     display: inline-block;
     padding: 1.1rem 1.95rem;
     margin-right: 1rem;
     font-family: 'DIN Pro Medium', sans-serif;
     border-color: #ffffff;
     font-size: 1.285rem; }
-    .adv__btn:hover {
+    .nadv__btn:hover {
       color: #202020;
       border-color: #202020; }
-    .adv__btn-icon {
+    .nadv__btn-icon {
       font-family: 'DIN Pro Light', sans-serif;
       display: inline-block;
       margin-left: 1rem;
@@ -2256,7 +2262,8 @@ button {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
   .delivery__tab-radio {
     position: absolute;
     opacity: 0; }
@@ -2322,7 +2329,8 @@ button {
   flex-wrap: wrap;
   margin-right: 0.7rem;
   padding: 0.25rem 0.4rem 0.25rem 0.4rem;
-  border: 1px solid #d7d7d7; }
+  border: 1px solid #d7d7d7;
+  cursor: pointer; }
 
 .tab-content--active {
   border-color: #f47920; }
@@ -2382,18 +2390,22 @@ button {
   max-width: 20rem;
   width: 100%;
   padding: 1.1rem 0 1.25rem 3rem;
+  letter-spacing: 0.2px;
   cursor: pointer; }
 
 .table__seller {
-  max-width: 13.2rem;
+  max-width: 11.5rem;
+  margin-left: 0.8rem;
   width: 100%;
   padding: 1.1rem 0 1.25rem 0;
+  letter-spacing: 0.2px;
   text-align: center;
   cursor: pointer; }
 
 .table__other {
-  padding: 1.1rem 0 1.25rem 0;
+  padding: 1.1rem 0 1.25rem 1rem;
   width: 100%;
+  letter-spacing: 0.2px;
   cursor: pointer; }
 
 .table__body {
@@ -3274,10 +3286,10 @@ button {
     margin: 0 0.4rem; } }
 
 @media screen and (max-width: 1300px) {
-  .adv__title {
+  .nadv__title {
     font-size: 4rem;
     max-width: 50rem; }
-  .adv__image {
+  .nadv__image {
     right: 0; } }
 
 @media screen and (max-width: 1200px) {
@@ -3303,10 +3315,10 @@ button {
     letter-spacing: -1px; }
   .categories__icon {
     left: 1rem; }
-  .adv__title {
+  .nadv__title {
     font-size: 3.3rem;
     max-width: 45rem; }
-  .adv__image {
+  .nadv__image {
     right: 0; }
   .timer__space {
     margin: 0 1.5rem; }
@@ -3561,7 +3573,7 @@ button {
       color: #202020; }
   .discount__btn {
     margin-top: 0; }
-  .adv {
+  .nadv {
     display: none; }
   .services {
     margin-top: 4rem; }
@@ -3729,7 +3741,7 @@ button {
       font-size: 1.5rem; }
   .timer__number {
     font-size: 3rem; }
-  .adv__wrapper {
+  .nadv__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3748,17 +3760,17 @@ button {
     -ms-flex-align: center;
     align-items: center;
     text-align: center; }
-  .adv__title {
+  .nadv__title {
     margin-top: 3rem;
     font-size: 2.5rem; }
-  .adv__subtitle {
+  .nadv__subtitle {
     font-size: 2rem; }
-  .adv__image {
+  .nadv__image {
     position: relative;
     margin-top: 3rem;
     min-height: 0;
     width: 55%; }
-  .adv__btn {
+  .nadv__btn {
     font-size: 1rem; }
   .subheader__wrapper {
     -webkit-box-orient: vertical;
@@ -3876,7 +3888,8 @@ button {
   .table__feature {
     padding: 1rem 0.8rem; }
   .table__seller {
-    padding: 1.6rem 0.8rem; }
+    margin-left: 0;
+    padding: 1rem 0.8rem; }
   .table__other {
     padding: 1rem 0.8rem; }
   .table__header {
@@ -3958,11 +3971,14 @@ button {
     font-size: 1.8rem; }
   .discount-card {
     margin-right: 0; }
-  .adv__title {
+  .nadv__title {
     max-width: 25rem;
     font-size: 2rem; }
-  .adv__subtitle {
+  .nadv__subtitle {
     font-size: 1.5rem; }
+  .services {
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
   .wide-swiper {
     padding-bottom: 6rem; }
     .wide-swiper__control {
@@ -4098,7 +4114,19 @@ button {
   .data__price-code {
     display: none; }
   .data__price-word2 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .table__feature {
+    padding: 1rem 0.8rem; }
+  .table__seller {
+    margin-left: 0;
+    padding: 1rem 0.8rem; }
+  .table__other {
+    padding: 1rem 0.8rem; } }
+
+@media screen and (max-width: 480px) {
+  .table__seller {
+    margin-left: 0;
+    padding: 1.6rem 0.8rem; } }
 
 @media screen and (max-height: 500px) {
   .mobile-menu__item {
